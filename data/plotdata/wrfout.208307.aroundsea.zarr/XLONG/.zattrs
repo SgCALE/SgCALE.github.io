@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "south_north",
+        "west_east"
+    ],
+    "_CoordinateAxisType": "Lon",
+    "long_name": "longitude",
+    "standard_name": "longitude",
+    "units": "degree_east"
+}

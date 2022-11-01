@@ -1,0 +1,13 @@
+{
+    "FieldType": 104,
+    "MemoryOrder": "XY ",
+    "_ARRAY_DIMENSIONS": [
+        "XTIME",
+        "south_north",
+        "west_east"
+    ],
+    "coordinates": "XLAT XLONG",
+    "description": "U at 10 M",
+    "missing_value": NaN,
+    "units": "m s-1"
+}

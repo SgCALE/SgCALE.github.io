@@ -1,0 +1,27 @@
+{
+    "GRIB_cfName": "unknown",
+    "GRIB_cfVarName": "v10",
+    "GRIB_gridDefinitionDescription": "Latitude/Longitude Grid",
+    "GRIB_gridType": "regular_ll",
+    "GRIB_iDirectionIncrementInDegrees": 1.875,
+    "GRIB_jDirectionIncrementInDegrees": 1.865,
+    "GRIB_latitudeOfFirstGridPointInDegrees": -43.833,
+    "GRIB_latitudeOfLastGridPointInDegrees": 69.946,
+    "GRIB_longitudeOfFirstGridPointInDegrees": 50.625,
+    "GRIB_longitudeOfLastGridPointInDegrees": 168.75,
+    "GRIB_name": "10 metre V wind component",
+    "GRIB_shortName": "10v",
+    "GRIB_stepType": "instant",
+    "GRIB_typeOfLevel": "surface",
+    "GRIB_units": "m s**-1",
+    "_ARRAY_DIMENSIONS": [
+        "latitude",
+        "longitude"
+    ],
+    "institution": "ECMWF",
+    "long_name": "10 metre V wind component",
+    "missing_value": NaN,
+    "pyproj_srs": "+proj=longlat +datum=WGS84 +no_defs",
+    "standard_name": "unknown",
+    "units": "m s**-1"
+}
