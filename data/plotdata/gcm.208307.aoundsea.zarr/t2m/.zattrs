@@ -1,0 +1,27 @@
+{
+    "GRIB_cfName": "unknown",
+    "GRIB_cfVarName": "t2m",
+    "GRIB_gridDefinitionDescription": "Latitude/Longitude Grid",
+    "GRIB_gridType": "regular_ll",
+    "GRIB_iDirectionIncrementInDegrees": 1.875,
+    "GRIB_jDirectionIncrementInDegrees": 1.865,
+    "GRIB_latitudeOfFirstGridPointInDegrees": -43.833,
+    "GRIB_latitudeOfLastGridPointInDegrees": 69.946,
+    "GRIB_longitudeOfFirstGridPointInDegrees": 50.625,
+    "GRIB_longitudeOfLastGridPointInDegrees": 168.75,
+    "GRIB_name": "2 metre temperature",
+    "GRIB_shortName": "2t",
+    "GRIB_stepType": "instant",
+    "GRIB_typeOfLevel": "surface",
+    "GRIB_units": "K",
+    "_ARRAY_DIMENSIONS": [
+        "latitude",
+        "longitude"
+    ],
+    "institution": "ECMWF",
+    "long_name": "2 metre temperature",
+    "missing_value": NaN,
+    "pyproj_srs": "+proj=longlat +datum=WGS84 +no_defs",
+    "standard_name": "unknown",
+    "units": "K"
+}
