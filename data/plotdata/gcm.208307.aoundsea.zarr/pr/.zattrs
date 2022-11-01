@@ -1,0 +1,17 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "latitude",
+        "longitude"
+    ],
+    "cell_measures": "area: areacella",
+    "cell_methods": "area: time: mean",
+    "comment": "includes both liquid and solid phases",
+    "history": "2019-11-12T11:29:30Z altered by CMOR: replaced missing value flag (-9e+33) and corresponding data with standard missing value (1e+20). 2019-11-12T11:29:30Z altered by CMOR: Inverted axis: lat.",
+    "institution": "MPIMET",
+    "long_name": "Precipitation",
+    "missing_value": 1.0000000200408773e+20,
+    "original_name": "pr",
+    "pyproj_srs": "+proj=longlat +datum=WGS84 +no_defs",
+    "standard_name": "precipitation_flux",
+    "units": "mm"
+}
