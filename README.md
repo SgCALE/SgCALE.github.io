@@ -5,11 +5,11 @@
 
 # 
 
-## Introduction
+## Climate models
 Global climate models (GCMs) under Coupled Model Intercomparison Project 6 (CMIP6) 
 have been widely used to investigate climate change impacts and put forward associated adaptation 
 and mitigation strategies. However, the relatively coarse spatial resolutions (usually 100~300km) 
-preclude their direct applications in regional scales, where the impact assessment analysis 
+preclude their direct applications in regional scales, where the analysis 
 (e.g., hydrological model simulation) is applied. To bridge this gap, a typical approach is to 
 ‘refine’ the information from GCMs through regional climate downscaling experiments, 
 which can be conducted statistically, dynamically, or a combination thereof. 
@@ -20,27 +20,26 @@ On the other hand, dynamical downscaling operates based on the physical processe
 the associated interactions in the climate systems and thus can produce a full set of 
 regional climate simulations (e.g., temperature and precipitation fields) that are 
 dynamically consistent. However, traditional dynamical downscaling contains significant biases 
-that are transferred from GCMs, through lower and lateral boundary conditions, to RCMs, 
-thus degrading the downscaled results. One approach to remove these biases is the 
-hybrid statistical-dynamical downscaling, where the bias correction is applied to GCMs, 
-followed by regional dynamical downscaling. 
+that are transferred from GCMs and may be enhanced during the process of downscaling, thus degrading the downscaled results. 
+One approach to remove these biases is the hybrid statistical-dynamical downscaling, where GCMs are firstly bias corrected, 
+and subsequently used as lower and lateral boundary conditions to drive the regional climate models (RCMs).
+
+
 
 ## Hybrid statistical-dynamical downscaling
-In this work, we applied a hybrid statistical-dynamical downscaling, 
-following the approach of Xu et al., 2021. 
-We established a bias-corrected six-hourly global dataset based on 
-14 CMIP6 GCMs and the European Centre for Medium-Range Weather Forecasts 
-Reanalysis 5 (ERA5) dataset, covering the historical reference period 1979–2014 
-and future projections under SSP585 for 2015–2100. The main contribution of 
-this dataset is twofold, 1) to the best of our knowledge, we provide the first 
-open-source high-resolution (12.5 km for southeast Asia and 500 m for Singapore, 
-as shown in Fig. 1) RCMs datasets in southeast Asia; 2) 
-this fine-tuned dataset is of better quality than the existing work (e.g., CORDEX) 
-in southeast Asia in terms of its ability to reproduce climate extremes, 
-spatial patterns, and so on. This dataset will be useful for policy-makers 
-and researchers to propose sustainable strategies to reduce climate change 
-impacts and understand the regional future climate, hydrology, agriculture, wind power, etc.
+In this work, we apply a hybrid statistical-dynamical downscaling, following the approach of Xu et al., 2021. 
+We establish a bias-corrected and downscaled dataset based on 14 CMIP6 GCMs and the European Centre for 
+Medium-Range Weather Forecasts Reanalysis 5 (ERA5) dataset. The bias-corrected dataset is adjusted to resemble 
+ERA5-based mean climate and interannual variance, and with a non-linear trend from the ensemble mean of the 
+14 CMIP6 models. The dataset spans a historical period of 1979–2014 and future scenarios (SSP585) of 2015–2100,
+ with a temporal scale of six-hour.
 
+The main contributions of this dataset are twofold, 1) we provide the open-source and high-resolution 
+(12.5km: southeast Asia; 2.5km: around Singapore; 500m: Singapore, as shown in Fig. 1) datasets, 
+including precipitation, wind, temperature, radiation, etc; 2) this bias-corrected and downscaled 
+dataset is of better quality than the existing dynamical work (e.g., CORDEX) in southeast Asia in terms
+ of its ability to reproduce regional climate extremes, spatial patterns, etc. This dataset will be 
+ useful for policy-makers and researchers to make the pathways for resilient planning to reduce climate change impacts.
 
 
 [![GitHub][github-badge]][github]
