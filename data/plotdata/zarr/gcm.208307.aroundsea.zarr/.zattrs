@@ -4,6 +4,6 @@
     "Conventions": "CF-1.7",
     "GRIB_centre": "ecmf",
     "GRIB_centreDescription": "European Centre for Medium-Range Weather Forecasts",
-    "history": "Tue Nov 01 13:31:11 2022: cdo merge gcm208307.p1.nc pre208307.sea.nc gcm.208303.aroundsea.nc\nTue Nov 01 13:30:33 2022: cdo selvar,u10,v10,t2m gcm208307.nc gcm208307.p1.nc\n2022-11-01T13:27 GRIB to CDM+CF via cfgrib-0.9.10.1/ecCodes-2.19.1 with {\"source\": \"../gcm/t2.208307.gcm.grb\", \"filter_by_keys\": {}, \"encode_cf\": [\"parameter\", \"time\", \"geography\", \"vertical\"]}",
+    "history": "Wed Nov 02 11:52:57 2022: cdo merge not2m.nc2 t2m.nc2 gcm.208307.aroundsea.nc2\nWed Nov 02 11:52:57 2022: cdo -delvar,t2m gcm.208303.aroundsea.nc2 not2m.nc2\nWed Nov 02 11:52:57 2022: cdo -f nc2 copy gcm.208303.aroundsea.nc gcm.208303.aroundsea.nc2\nTue Nov 01 13:31:11 2022: cdo merge gcm208307.p1.nc pre208307.sea.nc gcm.208303.aroundsea.nc\nTue Nov 01 13:30:33 2022: cdo selvar,u10,v10,t2m gcm208307.nc gcm208307.p1.nc\n2022-11-01T13:27 GRIB to CDM+CF via cfgrib-0.9.10.1/ecCodes-2.19.1 with {\"source\": \"../gcm/t2.208307.gcm.grb\", \"filter_by_keys\": {}, \"encode_cf\": [\"parameter\", \"time\", \"geography\", \"vertical\"]}",
     "pyproj_srs": "+proj=longlat +datum=WGS84 +no_defs"
 }

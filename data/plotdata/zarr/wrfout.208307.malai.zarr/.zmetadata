@@ -1,0 +1,386 @@
+{
+    "metadata": {
+        ".zattrs": {
+            "AERCU_FCT": 1.0,
+            "AERCU_OPT": 0,
+            "AER_ANGEXP_OPT": 1,
+            "AER_ANGEXP_VAL": 1.2999999523162842,
+            "AER_AOD550_OPT": 1,
+            "AER_AOD550_VAL": 0.11999999731779099,
+            "AER_ASY_OPT": 1,
+            "AER_ASY_VAL": 0.8999999761581421,
+            "AER_OPT": 0,
+            "AER_SSA_OPT": 1,
+            "AER_SSA_VAL": 0.8500000238418579,
+            "AER_TYPE": 1,
+            "AUTO_LEVELS_OPT": 2,
+            "BLDT": 0.0,
+            "BL_PBL_PHYSICS": 5,
+            "BOTTOM-TOP_GRID_DIMENSION": 35,
+            "BOTTOM-TOP_PATCH_END_STAG": 35,
+            "BOTTOM-TOP_PATCH_END_UNSTAG": 34,
+            "BOTTOM-TOP_PATCH_START_STAG": 1,
+            "BOTTOM-TOP_PATCH_START_UNSTAG": 1,
+            "BUCKET_J": -1.0,
+            "BUCKET_MM": -1.0,
+            "CDI": "Climate Data Interface version 1.9.8 (https://mpimet.mpg.de/cdi)",
+            "CDO": "Climate Data Operators version 1.9.8 (https://mpimet.mpg.de/cdo)",
+            "CEN_LAT": 1.4128799438476562,
+            "CEN_LON": 103.669677734375,
+            "CUDT": 0.0,
+            "CU_PHYSICS": 0,
+            "Conventions": "CF-1.6",
+            "DAMPCOEF": 0.20000000298023224,
+            "DAMP_OPT": 3,
+            "DFI_OPT": 0,
+            "DIFF_6TH_FACTOR": 0.11999999731779099,
+            "DIFF_6TH_OPT": 0,
+            "DIFF_6TH_SLOPEOPT": 0,
+            "DIFF_6TH_THRESH": 0.10000000149011612,
+            "DIFF_OPT": 1,
+            "DT": 30.0,
+            "DX": 2500.0,
+            "DY": 2500.0,
+            "DZBOT": 50.0,
+            "DZSTRETCH_S": 1.2999999523162842,
+            "DZSTRETCH_U": 1.100000023841858,
+            "ETAC": 0.20000000298023224,
+            "FEEDBACK": 1,
+            "GFDDA_END_H": 0,
+            "GFDDA_INTERVAL_M": 0,
+            "GMT": 0.0,
+            "GRAV_SETTLING": 0,
+            "GRIDTYPE": "C",
+            "GRID_FDDA": 0,
+            "GRID_ID": 1,
+            "GRID_SFDDA": 0,
+            "GWD_OPT": 0,
+            "HYBRID_OPT": 2,
+            "HYPSOMETRIC_OPT": 2,
+            "ICLOUD": 1,
+            "ICLOUD_CU": 0,
+            "IDEAL_CASE": 0,
+            "ISFFLX": 1,
+            "ISFTCFLX": 0,
+            "ISHALLOW": 0,
+            "ISICE": 15,
+            "ISLAKE": 21,
+            "ISOILWATER": 14,
+            "ISURBAN": 13,
+            "ISWATER": 17,
+            "I_PARENT_START": 1,
+            "JULDAY": 167,
+            "JULYR": 2083,
+            "J_PARENT_START": 1,
+            "KHDIF": 0.0,
+            "KM_OPT": 4,
+            "KVDIF": 0.0,
+            "MAP_PROJ": 1,
+            "MAP_PROJ_CHAR": "Lambert Conformal",
+            "MFSHCONV": 0,
+            "MMINLU": "MODIFIED_IGBP_MODIS_NOAH",
+            "MOAD_CEN_LAT": 1.8305740356445312,
+            "MOIST_ADV_OPT": 1,
+            "MP_PHYSICS": 24,
+            "NTASKS_TOTAL": 96,
+            "NTASKS_X": 8,
+            "NTASKS_Y": 12,
+            "NUM_LAND_CAT": 21,
+            "OBS_NUDGE_OPT": 0,
+            "PARENT_GRID_RATIO": 1,
+            "PARENT_ID": 1,
+            "POLE_LAT": 90.0,
+            "POLE_LON": 0.0,
+            "PREC_ACC_DT": 0.0,
+            "RADT": 10.0,
+            "RA_LW_PHYSICS": 4,
+            "RA_SW_PHYSICS": 4,
+            "SCALAR_ADV_OPT": 1,
+            "SCALAR_PBLMIX": 0,
+            "SF_LAKE_PHYSICS": 0,
+            "SF_OCEAN_PHYSICS": 0,
+            "SF_SFCLAY_PHYSICS": 91,
+            "SF_SURFACE_MOSAIC": 0,
+            "SF_SURFACE_PHYSICS": 2,
+            "SF_URBAN_PHYSICS": 0,
+            "SGFDDA_END_H": 0,
+            "SGFDDA_INTERVAL_M": 0,
+            "SHCU_PHYSICS": 0,
+            "SIMULATION_INITIALIZATION_TYPE": "REAL-DATA CASE",
+            "SIMULATION_START_DATE": "2083-06-15_00:00:00",
+            "SKEBS_ON": 0,
+            "SMOOTH_OPTION": 2,
+            "SOUTH-NORTH_GRID_DIMENSION": 121,
+            "SOUTH-NORTH_PATCH_END_STAG": 121,
+            "SOUTH-NORTH_PATCH_END_UNSTAG": 120,
+            "SOUTH-NORTH_PATCH_START_STAG": 1,
+            "SOUTH-NORTH_PATCH_START_UNSTAG": 1,
+            "SST_UPDATE": 1,
+            "STAND_LON": 112.947998046875,
+            "START_DATE": "2083-06-15_00:00:00",
+            "SURFACE_INPUT_SOURCE": 1,
+            "SWINT_OPT": 0,
+            "SWRAD_SCAT": 1.0,
+            "TITLE": " OUTPUT FROM WRF V4.3.3 MODEL",
+            "TKE_ADV_OPT": 1,
+            "TRACER_PBLMIX": 1,
+            "TRUELAT1": 1.8309999704360962,
+            "TRUELAT2": 1.8309999704360962,
+            "USE_Q_DIABATIC": 0,
+            "USE_THETA_M": 1,
+            "WEST-EAST_GRID_DIMENSION": 161,
+            "WEST-EAST_PATCH_END_STAG": 161,
+            "WEST-EAST_PATCH_END_UNSTAG": 160,
+            "WEST-EAST_PATCH_START_STAG": 1,
+            "WEST-EAST_PATCH_START_UNSTAG": 1,
+            "W_DAMPING": 1,
+            "YSU_TOPDOWN_PBLMIX": 1,
+            "history": "Wed Nov 02 13:19:45 2022: cdo merge not2m.nc2 t2m.nc2 wrfout.208307.malai.nc2\nWed Nov 02 13:19:45 2022: cdo -delvar,T2 wrfout.208307.d03.nc2 not2m.nc2\nWed Nov 02 13:19:45 2022: cdo -f nc2 copy wrfout.208307.malai.nc wrfout.208307.d03.nc2\nTue Nov 01 13:22:19 2022: cdo -seltimestep,1 -selvar,T2,RAINC,U10,V10 t2.208307.d03.nc wrfout.208307.malai.nc"
+        },
+        ".zgroup": {
+            "zarr_format": 2
+        },
+        "RAINC/.zarray": {
+            "chunks": [
+                1,
+                120,
+                160
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1,
+                120,
+                160
+            ],
+            "zarr_format": 2
+        },
+        "RAINC/.zattrs": {
+            "FieldType": 104,
+            "MemoryOrder": "XY ",
+            "_ARRAY_DIMENSIONS": [
+                "XTIME",
+                "south_north",
+                "west_east"
+            ],
+            "coordinates": "XLAT XLONG",
+            "description": "ACCUMULATED TOTAL CUMULUS PRECIPITATION",
+            "missing_value": NaN,
+            "units": "mm"
+        },
+        "T2/.zarray": {
+            "chunks": [
+                1,
+                120,
+                160
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1,
+                120,
+                160
+            ],
+            "zarr_format": 2
+        },
+        "T2/.zattrs": {
+            "FieldType": 104,
+            "MemoryOrder": "XY ",
+            "_ARRAY_DIMENSIONS": [
+                "XTIME",
+                "south_north",
+                "west_east"
+            ],
+            "coordinates": "XLAT XLONG",
+            "description": "TEMP at 2 M",
+            "missing_value": NaN,
+            "units": "K"
+        },
+        "U10/.zarray": {
+            "chunks": [
+                1,
+                120,
+                160
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1,
+                120,
+                160
+            ],
+            "zarr_format": 2
+        },
+        "U10/.zattrs": {
+            "FieldType": 104,
+            "MemoryOrder": "XY ",
+            "_ARRAY_DIMENSIONS": [
+                "XTIME",
+                "south_north",
+                "west_east"
+            ],
+            "coordinates": "XLAT XLONG",
+            "description": "U at 10 M",
+            "missing_value": NaN,
+            "units": "m s-1"
+        },
+        "V10/.zarray": {
+            "chunks": [
+                1,
+                120,
+                160
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1,
+                120,
+                160
+            ],
+            "zarr_format": 2
+        },
+        "V10/.zattrs": {
+            "FieldType": 104,
+            "MemoryOrder": "XY ",
+            "_ARRAY_DIMENSIONS": [
+                "XTIME",
+                "south_north",
+                "west_east"
+            ],
+            "coordinates": "XLAT XLONG",
+            "description": "V at 10 M",
+            "missing_value": NaN,
+            "units": "m s-1"
+        },
+        "XLAT/.zarray": {
+            "chunks": [
+                120,
+                160
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                120,
+                160
+            ],
+            "zarr_format": 2
+        },
+        "XLAT/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "south_north",
+                "west_east"
+            ],
+            "_CoordinateAxisType": "Lat",
+            "long_name": "latitude",
+            "standard_name": "latitude",
+            "units": "degree_north"
+        },
+        "XLONG/.zarray": {
+            "chunks": [
+                120,
+                160
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                120,
+                160
+            ],
+            "zarr_format": 2
+        },
+        "XLONG/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "south_north",
+                "west_east"
+            ],
+            "_CoordinateAxisType": "Lon",
+            "long_name": "longitude",
+            "standard_name": "longitude",
+            "units": "degree_east"
+        },
+        "XTIME/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "XTIME/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "XTIME"
+            ],
+            "axis": "T",
+            "calendar": "proleptic_gregorian",
+            "standard_name": "time",
+            "units": "minutes since 2083-06-15"
+        }
+    },
+    "zarr_consolidated_format": 1
+}

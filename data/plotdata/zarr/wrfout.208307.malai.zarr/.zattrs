@@ -133,5 +133,5 @@
     "WEST-EAST_PATCH_START_UNSTAG": 1,
     "W_DAMPING": 1,
     "YSU_TOPDOWN_PBLMIX": 1,
-    "history": "Tue Nov 01 13:22:19 2022: cdo -seltimestep,1 -selvar,T2,RAINC,U10,V10 t2.208307.d03.nc wrfout.208307.malai.nc"
+    "history": "Wed Nov 02 13:19:45 2022: cdo merge not2m.nc2 t2m.nc2 wrfout.208307.malai.nc2\nWed Nov 02 13:19:45 2022: cdo -delvar,T2 wrfout.208307.d03.nc2 not2m.nc2\nWed Nov 02 13:19:45 2022: cdo -f nc2 copy wrfout.208307.malai.nc wrfout.208307.d03.nc2\nTue Nov 01 13:22:19 2022: cdo -seltimestep,1 -selvar,T2,RAINC,U10,V10 t2.208307.d03.nc wrfout.208307.malai.nc"
 }
