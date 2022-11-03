@@ -1,6 +1,6 @@
 ---
-title: Most AWE.SOME Features
-afterTitle: ...and so much more!
+title: Publications
+afterTitle: We mainly focus the extrem events influence
 type: features
 ---
 
