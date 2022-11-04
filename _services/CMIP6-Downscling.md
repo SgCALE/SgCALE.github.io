@@ -1,12 +1,12 @@
 ---
-title: "Accounting"
-date: 2018-11-18T12:33:46+10:00
+title: "CMIP6 Downscling in Southeast Asia"
+date: 2022-11-04T18:02
 weight: 1
 ---
 
-Financial accounting (or financial accountancy) is the field of accounting concerned with the **summary, analysis and reporting** of financial transactions related to a business.
+The dataset is simulated by WRF4.3 by **ERA5 (3 domains) and GCM 6 hourly (4 domains)**  forcing in NSCC HPC.
 
-![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
+![Accounting Services](/images/domains_cmip6)
 
 # Objectives
 
