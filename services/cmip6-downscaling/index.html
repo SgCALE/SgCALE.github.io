@@ -35,7 +35,8 @@
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="@zerostaticio"/>
     <meta name="twitter:creator" content="@zerostaticio"/>
-  
+    <script src="/js/slider.js"></script>
+    <link rel="stylesheet" href="/css/sliderstyle.css">
 
 </head>
 
@@ -162,7 +163,150 @@ Global climate models (GCMs) under Coupled Model Intercomparison Project 6 (CMIP
 </div>
 
   </div>
+  <div class="img-comp-container">
+    <div class="img-comp-img">
+        <img id="left-temp"
+             src="./images/t2_include_oce.d01.2083.png"
+             width="800px" height="800px" >
+    </div>
+    <div class="img-comp-img img-comp-overlay">
+        <img id="right-temp"
+             src="./images/t2_include_oce.d00gcm.2083.png"
+             width="800px" height="800px" >
+    </div>
+    <!-- id's are not needed but wrapping all the buttons in a common ancestor will help -->
+    <div class="buttonContainer">
+          <input class="button" type="button" value="Great Southeast Asia">
+          <input class="button" type="button" value="Southeast Asia">
+          <input class="button" type="button" value="Around Singapore">
+          <input class="button" type="button" value="Singapore">
+    </div>
+</div>
 
+<div class="img-comp-container">
+    <div class="img-comp-img">
+        <img id="left-prep"
+             src="./images/pre_include_oce.d01.2083.png"
+             width="800px" height="800px" >
+    </div>
+    <div class="img-comp-img img-comp-overlay">
+        <img id="right-prep"
+             src="./images/pre_include_oce.d00gcm.2083.png"
+             width="800px" height="800px" >
+    </div>
+    <!-- id's are not needed but wrapping all the buttons in a common ancestor will help -->
+    <div class="buttonContainer">
+          <input class="button" type="button" value="Great Southeast Asia">
+          <input class="button" type="button" value="Southeast Asia">
+          <input class="button" type="button" value="Around Singapore">
+          <input class="button" type="button" value="Singapore">
+    </div>
+</div>
+
+<script>
+// Instead of setting up 4 separate event handlers that all point to the
+// same callback function, we can use event delegation where we handle the
+// event on an ancestor object of all the elements we care about
+
+/*find all elements with an "buttonContainer" class:*/
+  x = document.getElementsByClassName("buttonContainer");
+  temp_button = x[0]
+  prep_button = x[1]
+  temp_button.addEventListener("click", temp);
+  prep_button.addEventListener("click", prep);
+
+
+// Store all the images in an array
+var prepleft_backgrounds = [
+"./images/pre_include_oce.d01.2083.png",
+"./images/presea.d02.2083.png",
+"./images/pre.malai.d03.2083.png",
+"./images/pre.sg.d04.2083.png"
+
+];
+var prepright_backgrounds = [
+"./images/pre_include_oce.d00gcm.2083.png",
+"./images/presea.d01.2083.png",
+"./images/pre.malai.d02.2083.png",
+"./images/pre.sg.d03.2083.png"
+];
+var t2left_backgrounds = [
+"./images/t2_include_oce.d01.2083.png",
+"./images/t2sea.d02.2083.png",
+"./images/t2.malai.d03.2083.png",
+"./images/t2.sg.d04.2083.png"
+
+];
+var t2right_backgrounds = [
+"./images/t2_include_oce.d00gcm.2083.png",
+"./images/t2sea.d01.2083.png",
+"./images/t2.malai.d02.2083.png",
+"./images/t2.sg.d03.2083.png"
+];
+// Get a reference to the output element
+var left_temp = document.getElementById("left-temp");
+var right_temp = document.getElementById("right-temp");
+
+// Get a reference to the output element
+var left_prep = document.getElementById("left-prep");
+var right_prep = document.getElementById("right-prep");
+
+// All event handling functions are automatically passed an argument
+// that is a reference to the event object itself
+function temp(event){
+// Just set the background image based on the index of the button
+// that got clicked within its parent and the corresponding index
+// of the image in the array
+
+// Get all the <input> elements
+var buttons = temp_button.querySelectorAll("input");
+
+
+// Convert that node list into an array and get the index of the
+// one that got clicked (event.target is the one that got clicked)
+var index = (Array.prototype.slice.call(buttons)).indexOf(event.target);
+
+// Set the background to the right image from the array
+   left_temp.src = t2left_backgrounds[index]
+   right_temp.src = t2right_backgrounds[index]
+}
+
+// All event handling functions are automatically passed an argument
+// that is a reference to the event object itself
+function prep(event){
+// Just set the background image based on the index of the button
+// that got clicked within its parent and the corresponding index
+// of the image in the array
+
+// Get all the <input> elements
+var buttons = prep_button.querySelectorAll("input");
+
+// Convert that node list into an array and get the index of the
+// one that got clicked (event.target is the one that got clicked)
+var index = (Array.prototype.slice.call(buttons)).indexOf(event.target);
+
+// Set the background to the right image from the array
+   left_prep.src = prepleft_backgrounds[index]
+   right_prep.src = prepright_backgrounds[index]
+}
+
+</script>
+<script>
+/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+window.onload = function() {initComparisons()};
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
   <div class="footer">
   <div class="container">
     <div class="row">
