@@ -1,5 +1,5 @@
 ---
-title: "CMIP6 Downscaling"
+title: "cmip6 downscaling"
 date: 2022-11-04T18:02
 weight: 1
 ---
