@@ -1,9 +1,0 @@
-{
-    "_ARRAY_DIMENSIONS": [
-        "XTIME"
-    ],
-    "axis": "T",
-    "calendar": "proleptic_gregorian",
-    "standard_name": "time",
-    "units": "minutes since 2083-06-01"
-}
