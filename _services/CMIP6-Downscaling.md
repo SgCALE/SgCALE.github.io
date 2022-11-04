@@ -1,5 +1,5 @@
 ---
-title: "cmip6 downscaling"
+title: "CMIP6 Downscaling"
 date: 2022-11-04T18:02
 weight: 1
 ---
@@ -9,7 +9,7 @@ The dataset is simulated by WRF4.3 by **ERA5 (3 domains) and GCM 6 hourly (4 dom
 ![CMIP6 Downscling](/images/domains_cmip6.png)
 
 # Climate Models
-
+ss
 Global climate models (GCMs) under Coupled Model Intercomparison Project 6 (CMIP6) have been widely used to investigate climate change impacts and put forward associated adaptation and mitigation strategies. However, the relatively coarse spatial resolutions (usually 100~300km) preclude their direct applications in regional scales, where the analysis (e.g., hydrological model simulation) is applied. To bridge this gap, a typical approach is to ‘refine’ the information from GCMs through regional climate downscaling experiments, which can be conducted statistically, dynamically, or a combination thereof. Statistical downscaling establishes relationships between large-scale climate indicators and small-scale climate variables in the reference (historical) period. Subsequently, these relationships are kept unchanged in the future and used to predict the future variables. On the other hand, dynamical downscaling operates based on the physical processes and the associated interactions in the climate systems and thus can produce a full set of regional climate simulations (e.g., temperature and precipitation fields) that are dynamically consistent. However, traditional dynamical downscaling contains significant biases that are transferred from GCMs and may be enhanced during the process of downscaling, thus degrading the downscaled results. One approach to remove these biases is the hybrid statistical-dynamical downscaling, where GCMs are firstly bias corrected, and subsequently used as lower and lateral boundary conditions to drive the regional climate models (RCMs).
 
 ## Hybrid statistical-dynamical downscaling
