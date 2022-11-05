@@ -37,7 +37,7 @@
     <meta name="twitter:creator" content="@zerostaticio"/>
     <link rel="stylesheet" href="/css/sliderstyle.css">
     <script defer src="/js/slider.js"></script>
-
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
 
 </head>
 
@@ -180,10 +180,10 @@
 </div>
 <div class="slider responsive">
   <div class="left image">
-    <img id="left-temp" width="50%"  src="/images/pre_include_oce.d01.2083.png">
+    <img id="left-prep" width="50%"  src="/images/pre_include_oce.d01.2083.png">
   </div>
   <div class="right image">
-    <img id="right-temp" width="50%" src="/images/pre_include_oce.d00gcm.2083.png">
+    <img id="right-prep" width="50%" src="/images/pre_include_oce.d00gcm.2083.png">
   </div>
 </div>
 
@@ -283,21 +283,8 @@ var index = (Array.prototype.slice.call(buttons)).indexOf(event.target);
 }
 
 </script>
-<script>
-/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
-window.onload = function() {initComparisons()};
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+<script type="text/javascript">
+  $('.slider').slider();
 </script>
   <div class="footer">
   <div class="container">
