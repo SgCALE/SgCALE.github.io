@@ -5,7 +5,7 @@
 />
    <img
   src='https://github.com/SgCALE/SgCALE.github.io/blob/main/group.log2.jpg'
-  height='145'
+  height='140'
 />
 </div>
 
