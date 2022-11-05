@@ -1,0 +1,33 @@
+{
+    "name": "imgSlider",
+    "version": "1.2.1",
+    "title": "Before and after slider",
+    "description": "A jQuery plugin for comparing before and after images side by side",
+    "keywords": [
+        "ui", "image", "slider", "compare","responsive"
+    ],
+    "author": {
+        "name": "Kavya Sukumar",
+        "url": "http://github.com/kavyasukumar"
+    },
+    "maintainers": [
+        {
+            "name": "Kavya Sukumar",
+            "email": "fixthatcode@outlook.com"
+        }
+    ],
+    "licenses": [
+        {
+            "type":"MIT",
+            "url":"http://opensource.org/licenses/MIT"
+        }
+    ],
+    "bugs": "http://github.com/kavyasukumar/imgSlider/issues",
+    "homepage": "http://kavyasukumar.com/apps/imgslider/",
+    "docs": "http://kavyasukumar.com/apps/imgslider/",
+    "demo": "http://kavyasukumar.com/apps/imgslider/",
+    "download": "http://github.com/kavyasukumar/imgSlider/tree/master/distr",
+    "dependencies": {
+        "jquery": ">=1.11.0"
+    }
+}
