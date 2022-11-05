@@ -35,7 +35,7 @@
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="@zerostaticio"/>
     <meta name="twitter:creator" content="@zerostaticio"/>
-    <script src="/js/slider.js"></script>
+    <script defer src="/js/slider.js"></script>
 
 
 </head>
@@ -162,45 +162,31 @@
 </div>
 
 </div>
-<div class="img-comp-container">
-    <div class="img-comp-img">
-        <img id="left-temp"
-             src="/images/t2_include_oce.d01.2083.png"
-             width="800px" height="800px" >
-    </div>
-    <div class="img-comp-img img-comp-overlay">
-        <img id="right-temp"
-             src="/images/t2_include_oce.d00gcm.2083.png"
-             width="800px" height="800px" >
-    </div>
-    <!-- id's are not needed but wrapping all the buttons in a common ancestor will help -->
-    <div class="buttonContainer">
-          <input class="button" type="button" value="Great Southeast Asia">
-          <input class="button" type="button" value="Southeast Asia">
-          <input class="button" type="button" value="Around Singapore">
-          <input class="button" type="button" value="Singapore">
-    </div>
+<img-comparison-slider>
+  <img id="left-temp"
+    slot="first" src="/images/t2_include_oce.d01.2083.png" />
+  <img id="right-temp"
+    slot="second" src="/images/t2_include_oce.d00gcm.2083.png" />
+</img-comparison-slider>
+<div class="buttonContainer">
+    <input class="button" type="button" value="Great Southeast Asia">
+    <input class="button" type="button" value="Southeast Asia">
+    <input class="button" type="button" value="Around Singapore">
+    <input class="button" type="button" value="Singapore">
+</div>
+<img-comparison-slider>
+  <img id="left-prep"
+    slot="first" src="/images/pre_include_oce.d01.2083.png" />
+  <img id="right-prep"
+    slot="second" src="/images/pre_include_oce.d00gcm.2083.png" />
+</img-comparison-slider>
+<div class="buttonContainer">
+    <input class="button" type="button" value="Great Southeast Asia">
+    <input class="button" type="button" value="Southeast Asia">
+    <input class="button" type="button" value="Around Singapore">
+    <input class="button" type="button" value="Singapore">
 </div>
 
-<div class="img-comp-container">
-    <div class="img-comp-img">
-        <img id="left-prep"
-             src="/images/pre_include_oce.d01.2083.png"
-             width="800px" height="800px" >
-    </div>
-    <div class="img-comp-img img-comp-overlay">
-        <img id="right-prep"
-             src="/images/pre_include_oce.d00gcm.2083.png"
-             width="800px" height="800px" >
-    </div>
-    <!-- id's are not needed but wrapping all the buttons in a common ancestor will help -->
-    <div class="buttonContainer">
-          <input class="button" type="button" value="Great Southeast Asia">
-          <input class="button" type="button" value="Southeast Asia">
-          <input class="button" type="button" value="Around Singapore">
-          <input class="button" type="button" value="Singapore">
-    </div>
-</div>
 
 <script>
 // Instead of setting up 4 separate event handlers that all point to the
