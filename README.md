@@ -3,9 +3,7 @@
   src='https://github.com/longbiao1993/CMIP6/blob/main/data/figures/group.log.jpg'
   height='150'
 />
-</div>
-<div align=left>
-<img
+   <img
   src='https://github.com/SgCALE/SgCALE.github.io/blob/main/group.log2.jpg.jpg'
   height='150'
 />
