@@ -8,13 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="/favicon-32x32.svg">
 
-  
+  <link rel="stylesheet" href="css/BeerSlider.css"> <!-- CSS beerslider -->
+	<link rel="stylesheet" href="css/demo.css"> <!-- Resource style -->
+	<!-- <script src="js/modernizr.js"></script> Modernizr    -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair&#43;Display:wght@600&amp;family=Source&#43;Sans&#43;Pro:wght@400;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr --> 
+
 
   <link rel="stylesheet" href="/css/style.min.fa99e0c3f94cbdef123818bedef9060705925598356be6808bfc07abc4b45225.css">
    
@@ -151,44 +151,36 @@
   </div>
 </div>
 
-</div>
-<figure class="cd-image-container">
-  <img id="left_temp" width="100%" src="/images/t2_include_oce.d01.2083.png" alt="Original Image">
-  <span class="cd-image-label" data-type="original">Lower Resolution</span>
-
-  <div class="cd-resize-img"> <!-- the resizable image on top -->
-    <img id="right_temp" width="100%" src="/images/t2_include_oce.d00gcm.2083.png" alt="Modified Image">
-    <span class="cd-image-label" data-type="modified">Higher Resolution</span>
+<section class="how mb">
+  <div class="container">
+<section class="examples">
+  <h2 class="heading-font">Examples:</h2>
+  <div id="slider1" class="beer-slider" data-beer-label="original">
+    <img id="left-temp" src="./images/t2_include_oce.d01.2083.png" alt="Baltic seashore - unprocessed original photo">
+    <div class="beer-reveal" data-beer-label="sepicol">
+      <img  id="right-temp" src="./images/t2_include_oce.d00gcm.2083.png" alt="Baltic seashore - sepicol Lightroom preset by Altphotos.com">
+    </div>
   </div>
-
-  <span class="cd-handle"></span>
-</figure> <!-- cd-image-container -->
-
-<div class="buttonContainer">
-    <input class="button" type="button" value="Great Southeast Asia">
-    <input class="button" type="button" value="Southeast Asia">
-    <input class="button" type="button" value="Around Singapore">
-    <input class="button" type="button" value="Singapore">
-</div>
-<figure class="cd-image-container">
-  <img id="left_prep" width="100%" src="/images/pre_include_oce.d01.2083.png" alt="Original Image">
-  <span class="cd-image-label" data-type="original">Lower Resolution</span>
-
-  <div class="cd-resize-img"> <!-- the resizable image on top -->
-    <img id="right_prep" width="100%" src="/images/pre_include_oce.d00gcm.2083.png" alt="Modified Image">
-    <span class="cd-image-label" data-type="modified">Higher Resolution</span>
+  <div class="buttonContainer">
+      <input class="button" type="button" value="Great Southeast Asia">
+      <input class="button" type="button" value="Southeast Asia">
+      <input class="button" type="button" value="Around Singapore">
+      <input class="button" type="button" value="Singapore">
   </div>
-
-  <span class="cd-handle"></span>
-</figure> <!-- cd-image-container -->
-
-<div class="buttonContainer">
-    <input class="button" type="button" value="Great Southeast Asia">
-    <input class="button" type="button" value="Southeast Asia">
-    <input class="button" type="button" value="Around Singapore">
-    <input class="button" type="button" value="Singapore">
+  <div id="slider2" class="beer-slider" data-beer-label="before">
+    <img  id="left-prep" src="./images/pre_include_oce.d01.2083.png" alt="Dogs playing in the sea - unprocessed original photo">
+    <div class="beer-reveal" data-beer-label="after">
+      <img  id="right-prep" src="./images/pre_include_oce.d00gcm.2083.png" alt="Dogs playing in the sea using Altphotos.com Lightroom presets">
+    </div>
+  </div>
+  <div class="buttonContainer">
+      <input class="button" type="button" value="Great Southeast Asia">
+      <input class="button" type="button" value="Southeast Asia">
+      <input class="button" type="button" value="Around Singapore">
+      <input class="button" type="button" value="Singapore">
+  </div>
+</section> 
 </div>
-
 
 <script>
 // Instead of setting up 4 separate event handlers that all point to the
@@ -196,39 +188,39 @@
 // event on an ancestor object of all the elements we care about
 
 /*find all elements with an "buttonContainer" class:*/
-  x = document.getElementsByClassName("buttonContainer");
-  temp_button = x[0]
-  prep_button = x[1]
-  temp_button.addEventListener("click", temp);
-  prep_button.addEventListener("click", prep);
+x = document.getElementsByClassName("buttonContainer");
+temp_button = x[0]
+prep_button = x[1]
+temp_button.addEventListener("click", temp);
+prep_button.addEventListener("click", prep);
 
 
 // Store all the images in an array
 var prepleft_backgrounds = [
-"/images/pre_include_oce.d01.2083.png",
-"/images/presea.d02.2083.png",
-"/images/pre.malai.d03.2083.png",
-"/images/pre.sg.d04.2083.png"
+"./images/pre_include_oce.d01.2083.png",
+"./images/presea.d02.2083.png",
+"./images/pre.malai.d03.2083.png",
+"./images/pre.sg.d04.2083.png"
 
 ];
 var prepright_backgrounds = [
-"/images/pre_include_oce.d00gcm.2083.png",
-"/images/presea.d01.2083.png",
-"/images/pre.malai.d02.2083.png",
-"/images/pre.sg.d03.2083.png"
+"./images/pre_include_oce.d00gcm.2083.png",
+"./images/presea.d01.2083.png",
+"./images/pre.malai.d02.2083.png",
+"./images/pre.sg.d03.2083.png"
 ];
 var t2left_backgrounds = [
-"/images/t2_include_oce.d01.2083.png",
-"/images/t2sea.d02.2083.png",
-"/images/t2.malai.d03.2083.png",
-"/images/t2sg.d04.2083.png"
+"./images/t2_include_oce.d01.2083.png",
+"./images/t2sea.d02.2083.png",
+"./images/t2.malai.d03.2083.png",
+"./images/t2sg.d04.2083.png"
 
 ];
 var t2right_backgrounds = [
-"/images/t2_include_oce.d00gcm.2083.png",
-"/images/t2sea.d01.2083.png",
-"/images/t2.malai.d02.2083.png",
-"/images/t2sg.d03.2083.png"
+"./images/t2_include_oce.d00gcm.2083.png",
+"./images/t2sea.d01.2083.png",
+"./images/t2.malai.d02.2083.png",
+"./images/t2sg.d03.2083.png"
 ];
 // Get a reference to the output element
 var left_temp = document.getElementById("left-temp");
@@ -254,8 +246,8 @@ var buttons = temp_button.querySelectorAll("input");
 var index = (Array.prototype.slice.call(buttons)).indexOf(event.target);
 
 // Set the background to the right image from the array
-   left_temp.src = t2left_backgrounds[index]
-   right_temp.src = t2right_backgrounds[index]
+ left_temp.src = t2left_backgrounds[index]
+ right_temp.src = t2right_backgrounds[index]
 }
 
 // All event handling functions are automatically passed an argument
@@ -273,9 +265,19 @@ var buttons = prep_button.querySelectorAll("input");
 var index = (Array.prototype.slice.call(buttons)).indexOf(event.target);
 
 // Set the background to the right image from the array
-   left_prep.src = prepleft_backgrounds[index]
-   right_prep.src = prepright_backgrounds[index]
+ left_prep.src = prepleft_backgrounds[index]
+ right_prep.src = prepright_backgrounds[index]
 }
+
+</script>
+
+<!-- library -->
+<script src="/js/BeerSlider.js"></script>
+<!-- init -->
+<script>
+new BeerSlider( document.getElementById( "slider" ) );    
+new BeerSlider( document.getElementById( "slider1" ), {start: 50} );
+new BeerSlider( document.getElementById( "slider2" ), {start: 75} );
 
 </script>
 
@@ -360,9 +362,6 @@ var index = (Array.prototype.slice.call(buttons)).indexOf(event.target);
   <script type="text/javascript" src="/js/scripts.min.bf1e1f7ae8e03db5f012356e825843facdff51c0a559cb0d27fe2bbe1db405c2.js"></script>
 
   
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
-<script src="js/main.js"></script> <!-- Resource jQuery -->
 
   
 
