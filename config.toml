@@ -55,7 +55,7 @@ title = "NUS SgCALE"
 [menu]
   # Main Menu
   [[menu.main]]
-    name = "Services"
+    name = "Research"
     url = "/services/"
     weight = 1
 
