@@ -109,7 +109,7 @@ h3.heading-font {
 		justify-content: space-between;
 	}
 	.examples .beer-slider {
-		max-width: calc(50% - 12px);
+		max-width: calc(70%);
 		margin-left: 0;
 		margin-right: 0;
 	}
