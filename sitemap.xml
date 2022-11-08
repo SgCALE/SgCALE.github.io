@@ -8,11 +8,7 @@
   </url>
   
   <url>
-    <loc>/services/accounting/</loc>
-  </url>
-  
-  <url>
-    <loc>/services/cmip6-downscaling/</loc>
+    <loc>/research/cmip6-downscaling/</loc>
   </url>
   
   <url>
@@ -21,7 +17,7 @@
   </url>
   
   <url>
-    <loc>/services/business-advisory/</loc>
+    <loc>/research/business-advisory/</loc>
   </url>
   
   <url>
@@ -35,7 +31,7 @@
   </url>
   
   <url>
-    <loc>/services/business-sales/</loc>
+    <loc>/research/business-sales/</loc>
   </url>
   
   <url>
@@ -44,7 +40,7 @@
   </url>
   
   <url>
-    <loc>/services/mergers/</loc>
+    <loc>/research/mergers/</loc>
   </url>
   
   <url>
@@ -53,22 +49,16 @@
   </url>
   
   <url>
-    <loc>/services/superannuation/</loc>
+    <loc>/research/superannuation/</loc>
   </url>
   
   <url>
-    <loc>/services/tax-preperation/</loc>
-    <lastmod>2018-11-18T12:33:46+10:00</lastmod>
+    <loc>/research/accounting/</loc>
   </url>
   
   <url>
     <loc>/team/</loc>
     <lastmod>2018-12-20T13:45:06+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/services/</loc>
-    <lastmod>2018-11-18T12:33:46+10:00</lastmod>
   </url>
   
   <url>
@@ -92,6 +82,10 @@
   
   <url>
     <loc>/404/</loc>
+  </url>
+  
+  <url>
+    <loc>/research/</loc>
   </url>
   
   <url>
