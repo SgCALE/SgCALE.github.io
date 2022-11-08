@@ -2,9 +2,11 @@
 title: "CMIP6 Downscaling"
 date: 2022-11-04T18:02
 weight: 1
+draft: false
+featured: true
 ---
 
-The dataset is simulated by WRF4.3 by **ERA5 (3 domains) and GCM 6 hourly (4 domains)**  forcing in NSCC HPC.
+The dataset is simulated by WRF4.3 by **ERA5 (3 domains) and GCM 6 hourly (4 domains)**  forcing in NSCC HPC. We also do bias-corrected before dynamic scaling simulation of GCM based on ERA5 historical pressure level and surface level dataset
 
 ![CMIP6 Downscling](/images/domains_cmip6.png)
 
