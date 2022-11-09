@@ -4364,7 +4364,7 @@ ol {
   overflow: hidden;
   background-color: #f6f7ff;
   border-radius: 4px;
-  width: 80%;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: row;
