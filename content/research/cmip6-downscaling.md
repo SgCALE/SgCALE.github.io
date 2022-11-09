@@ -20,10 +20,10 @@ In this work, we apply a hybrid statistical-dynamical downscaling, following the
 
 ## Precipitation Results
 
-Faithful representation means that the actual effects of the transactions shall be properly accounted for and reported in the financial statements. The words and numbers must match what really happened in the transaction. The ingredients of faithful representation are completeness, neutrality and free from error.
+
 
 
 ## Temperature Results
 
-Verifiability implies consensus between the different knowledgeable and independent users of financial information. Such information must be supported by sufficient evidence to follow the principle of objectivity.
+
 
