@@ -18,12 +18,26 @@ Global climate models (GCMs) under Coupled Model Intercomparison Project 6 (CMIP
 
 In this work, we apply a hybrid statistical-dynamical downscaling, following the approach of Xu et al., 2021. We establish a bias-corrected and downscaled dataset based on 14 CMIP6 GCMs and the European Centre for Medium -Range Weather Forecasts Reanalysis 5 (ERA5) dataset. The bias-corrected dataset is adjusted to resemble ERA5-based mean climate and interannual variance, and with a non-linear trend from the ensemble mean of the 14 CMIP6 models. The dataset spans a historical period of 1979–2014 and future scenarios (SSP585) of 2015–2100, with a temporal scale of six-hour. The main contributions of this dataset are twofold, 1) we provide the open- source and high-resolution (12.5km: southeast Asia; 2.5km: around Singapore; 500m: Singapore, as shown in Fig. datasets, including precipitation, wind, temperature, radiation, etc; 2) this bias-corrected and downscaled dataset is of better quality than the existing dynamical work (e.g., CORDEX) in southeast Asia in terms of its ability to reproduce regional climate extremes, spatial patterns, etc. This dataset will be useful for policy-makers and researchers to make the pathways for resilient planning to reduce climate change impacts.
 
-## Precipitation Results
+## GCM EXPERIMENTS
+These is our finished, running, and future downscaling simulation tasks
+
+Model Name | Simulation state | Finished period	Plan task
+--- | --- | ---
+*ERA5* | `Finished` | **Historical(1981-2020)**
+MPI-ESM1-2-LR | Running | SSP126,245,585
+EC-Earth3-Veg | Preparing | SSP126,245,585
+FGOALS-f3-L	 | Preparing | SSP126,245,585
+CESM2-WACCM | Preparing | SSP126,245,585
+ACCESS-CM2 | Preparing | SSP126,245,585
+CanESM5 | Preparing | SSP126,245,585
+
+
+## Downscaled Temperature (2083, Jul)
 
 
 
 
-## Temperature Results
+##  Downscaled Precipitation (2083, Jul)
 
 
 
