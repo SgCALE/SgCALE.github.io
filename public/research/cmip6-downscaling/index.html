@@ -237,13 +237,14 @@ Global climate models (GCMs) under Coupled Model Intercomparison Project 6 (CMIP
  
 <section class="how mb">
   <div class="container">
-<section class="examples">
+    <section class="examples">
 
-  <div id="slider1" class="beer-slider" >
-    <img id="left-temp" src="/images/t2_include_oce.d01.2083.png" alt="Baltic seashore - unprocessed original photo">
+    <div id="slider1" class="beer-slider" >
+      <img id="left-temp" src="/images/t2_include_oce.d01.2083.png" alt="Baltic seashore - unprocessed original photo">
     <div class="beer-reveal" >
       <img  id="right-temp" src="/images/t2_include_oce.d00gcm.2083.png" alt="Baltic seashore - sepicol Lightroom preset by Altphotos.com">
     </div>
+    </section>
   </div>
   <div class="buttonContainer">
       <input class="button" type="button" value="Great Southeast Asia">
@@ -251,75 +252,71 @@ Global climate models (GCMs) under Coupled Model Intercomparison Project 6 (CMIP
       <input class="button" type="button" value="Southern Malay Peninsula">
       <input class="button" type="button" value="Singapore">
   </div>
-</section> 
-</div>
-
-<script>
-
-
-
-
- 
-xt = document.getElementsByClassName("buttonContainer");
-temp_button = xt
-temp_button.addEventListener("click", temp);
-
-
-
-var t2left_backgrounds = [
-"/images/t2_include_oce.d01.2083.png",
-"/images/t2sea.d02.2083.png",
-"/images/t2malai.d03.2083.png",
-"/images/t2sg.d04.2083.png"
-];
-var t2right_backgrounds = [
-"/images/t2_include_oce.d00gcm.2083.png",
-"/images/t2sea.d01.2083.png",
-"/images/t2malai.d02.2083.png",
-"/images/t2sg.d03.2083.png"
-];
-
-
-var left_temp = document.getElementById("left-temp");
-var right_temp = document.getElementById("right-temp");
-
-
-
-function temp(event){
-
-
-
-
-
-var buttons = temp_button.querySelectorAll("input");
-
-
-
-
-var index = (Array.prototype.slice.call(buttons)).indexOf(event.target);
-
-
- left_temp.src = t2left_backgrounds[index]
- right_temp.src = t2right_backgrounds[index]
-}
-
-
-</script>
-
-
-<script src="/js/BeerSlider.js"></script>
-
-<script>;    
-  new BeerSlider( document.getElementById( "slider1" ), {start: 50} );
-</script>
-
-  <script type="text/javascript" src="/js/scripts.min.bf1e1f7ae8e03db5f012356e825843facdff51c0a559cb0d27fe2bbe1db405c2.js"></script>
-
+  <div>
+    <script>
+    
+    
+    
+    
+     
+    xt = document.getElementsByClassName("buttonContainer");
+    temp_button = xt[0];
+    temp_button.addEventListener("click", temp);
+    
+    
+    
+    var t2left_backgrounds = [
+    "/images/t2_include_oce.d01.2083.png",
+    "/images/t2sea.d02.2083.png",
+    "/images/t2malai.d03.2083.png",
+    "/images/t2sg.d04.2083.png"
+    ];
+    var t2right_backgrounds = [
+    "/images/t2_include_oce.d00gcm.2083.png",
+    "/images/t2sea.d01.2083.png",
+    "/images/t2malai.d02.2083.png",
+    "/images/t2sg.d03.2083.png"
+    ];
+    
+    
+    var left_temp = document.getElementById("left-temp");
+    var right_temp = document.getElementById("right-temp");
+    
+    
+    
+    function temp(event){
+    
+    
+    
+    
+    
+    var buttons = temp_button.querySelectorAll("input");
+    
+    
+    
+    
+    var index = (Array.prototype.slice.call(buttons)).indexOf(event.target);
+    
+    
+     left_temp.src = t2left_backgrounds[index]
+     right_temp.src = t2right_backgrounds[index]
+    }
+    
+    
+    </script>
+    
+    
+    <script src="/js/BeerSlider.js"></script>
+    
+    <script>
+    
+      new BeerSlider( document.getElementById( "slider1" ), {start: 50} )
+    </script>
   
-
-
+  </div>
   
-
+</section>
+<script type="text/javascript" src="/js/scripts.min.bf1e1f7ae8e03db5f012356e825843facdff51c0a559cb0d27fe2bbe1db405c2.js"></script>
 
 </body>
 
