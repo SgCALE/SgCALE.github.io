@@ -2,6 +2,30 @@
 <html lang="en">
 
 <head>
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .background {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+   </style>
+   
+   <script type="text/javascript">
+    window.onload = function() {
+      Particles.init({
+        selector: '.background'
+      });
+    };
+
+   </script>
+
 	<meta name="generator" content="Hugo 0.68.3" />
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -378,7 +402,8 @@
   
 
 
-  
+  <canvas class="background"></canvas>
+  <script src="js/particles.js-master/src/particles.js"></script>
 
 
 </body>
