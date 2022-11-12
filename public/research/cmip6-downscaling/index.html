@@ -323,6 +323,105 @@ Global climate models (GCMs) under Coupled Model Intercomparison Project 6 (CMIP
 </html>
 
 <h2 id="downscaled-precipitation-2083-jul">Downscaled Precipitation (2083, Jul)</h2>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair&#43;Display:wght@600&amp;family=Source&#43;Sans&#43;Pro:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.min.fa99e0c3f94cbdef123818bedef9060705925598356be6808bfc07abc4b45225.css">
+
+    <link rel="stylesheet" href="/css/BeerSlider.css"> 
+    <link rel="stylesheet" href="/css/demo.css"> 
+    <script src="/js/BeerSlider.js"></script> 
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+<section class="how mb">
+  <div class="container">
+<section class="examples">
+  <div id="slider2" class="beer-slider" >
+    <img  id="left-prep" src="/images/pre_include_oce.d01.2083.png" alt="Dogs playing in the sea - unprocessed original photo">
+    <div class="beer-reveal" d>
+      <img  id="right-prep" src="/images/pre_include_oce.d00gcm.2083.png" alt="Dogs playing in the sea using Altphotos.com Lightroom presets">
+    </div>
+  </div>
+  <div class="buttonContainer">
+      <input class="button" type="button" value="Great Southeast Asia">
+      <input class="button" type="button" value="Southeast Asia">
+      <input class="button" type="button" value="Southern Malay Peninsula">
+      <input class="button" type="button" value="Singapore">
+  </div>
+</section> 
+</div>
+
+<script>
+
+
+
+
+ 
+xp = document.getElementsByClassName("buttonContainer");
+prep_button = xp[0];
+prep_button.addEventListener("click", prep);
+
+
+
+var prepleft_backgrounds = [
+"/images/pre_include_oce.d01.2083.png",
+"/images/presea.d02.2083.png",
+"/images/pre.malai.d03.2083.png",
+"/images/pre.sg.d04.2083.png"
+
+];
+var prepright_backgrounds = [
+"/images/pre_include_oce.d00gcm.2083.png",
+"/images/presea.d01.2083.png",
+"/images/pre.malai.d02.2083.png",
+"/images/pre.sg.d03.2083.png"
+];
+
+
+var left_prep = document.getElementById("left-prep");
+var right_prep = document.getElementById("right-prep");
+
+
+
+function prep(event){
+
+
+
+
+
+var buttons = prep_button.querySelectorAll("input");
+
+
+
+var index = (Array.prototype.slice.call(buttons)).indexOf(event.target);
+
+
+ left_prep.src = prepleft_backgrounds[index]
+ right_prep.src = prepright_backgrounds[index]
+}
+
+</script>
+
+
+<script src="/js/BeerSlider.js"></script>
+
+<script>;    
+  new BeerSlider( document.getElementById( "slider2" ), {start: 50} );
+</script>
+</div>
+  
+</section>
+<script type="text/javascript" src="/js/scripts.min.bf1e1f7ae8e03db5f012356e825843facdff51c0a559cb0d27fe2bbe1db405c2.js"></script>
+
+</body>
+</html>
+
 </div>
     </div>
   </div>
