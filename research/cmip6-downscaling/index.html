@@ -12,13 +12,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair&#43;Display:wght@600&amp;family=Source&#43;Sans&#43;Pro:wght@400;700&amp;display=swap" rel="stylesheet">
-
-
-
-  
-  
-  
-  
     
   
   <link rel="stylesheet" href="/css/style.min.fa99e0c3f94cbdef123818bedef9060705925598356be6808bfc07abc4b45225.css">
@@ -171,6 +164,64 @@
 <h2 class="content" id="simulation-domians">What we are releasing</h2>
 <div class="content"><p align = "justify">We are releasing a bias-corrected and downscaled dataset based on 14 Coupled Model Intercomparison Project 6 (CMIP6) global climate models (GCMs) and the European Centre for Medium-Range Weather Forecasts Reanalysis 5 (ERA5) dataset. The dataset is simulated by <strong>ERA5 (3 domains) and GCMs (4 domains)</strong> forcing in NSCC HPC as shown in the following figure.</p>
 <p><img src="/images/rdomains.png" alt="CMIP6 Downscling"></p>
+
+<h2 class="content" id="simulation-domians">What's downscaling</h2>
+<p align = "justify" style="color:black">GCMs under CMIP6 have been widely used to investigate climate change impacts and put forward associated adaptation and mitigation strategies. However, the relatively coarse spatial resolutions (usually 100~300km) preclude their direct applications in regional scales, where the analysis (e.g., hydrological model simulation) is applied. To bridge this gap, a typical approach is to ‘refine’ the information from GCMs through regional climate downscaling experiments, which can be conducted statistically, dynamically, or a combination thereof. Statistical downscaling establishes relationships between large-scale climate indicators and small-scale climate variables in the reference (historical) period. Subsequently, these relationships are kept unchanged in the future and used to predict the future variables. On the other hand, dynamical downscaling operates based on the physical processes and the associated interactions in the climate systems and thus can produce a full set of regional climate simulations (e.g., temperature and precipitation fields) that are dynamically consistent. However, traditional dynamical downscaling contains significant biases that are transferred from GCMs and may be enhanced during the process of downscaling, thus degrading the downscaled results. One approach to remove these biases is the hybrid statistical-dynamical downscaling, where GCMs are firstly bias-corrected, and subsequently used as lower and lateral boundary conditions to drive the regional climate models (RCMs).</p>
+<p align = "justify" style="color:black">In this work, we apply a hybrid statistical-dynamical downscaling, following the approach of <a href="https://doi.org/10.1038/s41597-021-01079-3" target="_blank"> Xu et al. 2021</a>. The bias-corrected dataset is adjusted to resemble ERA5-based mean climate and interannual variance, and with a non-linear trend from the ensemble mean of the 14 CMIP6 models. The dataset spans a historical period of 1979–2014 and future scenarios (SSP585) of 2015–2100, with a temporal scale of six-hour. Efforts are underway to develop future simulations and the available model outputs are listed below.</p>
+
+  <h2>GCM EXPERIMENTS</h2>
+<h2>               </h2>
+<table style="width:100%">
+  <tr>
+    <th>Model Name</th>
+    <th>Simulation state</th>
+    <th>Finished period</th>
+    <th>Plan task</th>
+  </tr>
+  <tr>
+    <td>ERA5</td>
+    <td>Finished</td>
+    <td>Historical(1981-2020)</td>
+    <td>Historical(1981-2020)</td>
+  </tr>
+  <tr>
+    <td>MPI-ESM1-2-LR</td>
+    <td>Running</td>
+    <td>SSP585(2081-2100)</td>
+    <td>SSP126,245,585</td>
+  </tr>
+  <tr>
+    <td>EC-Earth3-Veg</td>
+    <td>Preparing</td>
+    <td>No</td>
+    <td>SSP126,245,585</td>
+  </tr>
+  <tr>
+    <td>FGOALS-f3-L</td>
+    <td>Preparing</td>
+    <td>No</td>
+    <td>SSP126,245,585</td>
+  </tr>
+  <tr>
+    <td>CESM2-WACCM</td>
+    <td>Preparing</td>
+    <td>No</td>
+    <td>SSP126,245,585</td>
+  </tr>
+  <tr>
+    <td>ACCESS-CM2</td>
+    <td>Preparing</td>
+    <td>No</td>
+    <td>SSP126,245,585</td>
+  </tr>
+  <tr>
+    <td>CanESM5</td>
+    <td>Preparing</td>
+    <td>No</td>
+    <td>SSP126,245,585</td>
+  </tr>
+</table>
+
 <h2 class="content" id="simulation-domians">What's new</h2>
 
 <p align = "justify">The main contributions of this dataset are twofold, 1) we provide the open-source and high-resolution (12.5km: southeast Asia; 2.5km: around Singapore; 500m: Singapore, figures below) datasets, including precipitation, wind, temperature, radiation, etc; 2) this bias-corrected and downscaled dataset is of better quality than the existing dynamical work (e.g., CORDEX) in southeast Asia in terms of its ability to reproduce regional climate extremes, spatial patterns, etc. This dataset will be useful for policy-makers and researchers to make the pathways for resilient planning to reduce climate change impacts.</p>
@@ -372,63 +423,6 @@ var index = (Array.prototype.slice.call(buttons)).indexOf(event.target);
   new BeerSlider( document.getElementById( "slider1" ), {start: 50} );
   new BeerSlider( document.getElementById( "slider2" ), {start: 50} );
 </script>
-
-<h2 class="content" id="simulation-domians">What's downscaling</h2>
-<p align = "justify" style="color:black">GCMs under CMIP6 have been widely used to investigate climate change impacts and put forward associated adaptation and mitigation strategies. However, the relatively coarse spatial resolutions (usually 100~300km) preclude their direct applications in regional scales, where the analysis (e.g., hydrological model simulation) is applied. To bridge this gap, a typical approach is to ‘refine’ the information from GCMs through regional climate downscaling experiments, which can be conducted statistically, dynamically, or a combination thereof. Statistical downscaling establishes relationships between large-scale climate indicators and small-scale climate variables in the reference (historical) period. Subsequently, these relationships are kept unchanged in the future and used to predict the future variables. On the other hand, dynamical downscaling operates based on the physical processes and the associated interactions in the climate systems and thus can produce a full set of regional climate simulations (e.g., temperature and precipitation fields) that are dynamically consistent. However, traditional dynamical downscaling contains significant biases that are transferred from GCMs and may be enhanced during the process of downscaling, thus degrading the downscaled results. One approach to remove these biases is the hybrid statistical-dynamical downscaling, where GCMs are firstly bias-corrected, and subsequently used as lower and lateral boundary conditions to drive the regional climate models (RCMs).</p>
-<p align = "justify" style="color:black">In this work, we apply a hybrid statistical-dynamical downscaling, following the approach of Xu et al. 2021. The bias-corrected dataset is adjusted to resemble ERA5-based mean climate and interannual variance, and with a non-linear trend from the ensemble mean of the 14 CMIP6 models. The dataset spans a historical period of 1979–2014 and future scenarios (SSP585) of 2015–2100, with a temporal scale of six-hour. Efforts are underway to develop future simulations and the available model outputs are listed below.</p>
-
-  <h2>GCM EXPERIMENTS</h2>
-<h2>               </h2>
-<table style="width:100%">
-  <tr>
-    <th>Model Name</th>
-    <th>Simulation state</th>
-    <th>Finished period</th>
-    <th>Plan task</th>
-  </tr>
-  <tr>
-    <td>ERA5</td>
-    <td>Finished</td>
-    <td>Historical(1981-2020)</td>
-    <td>Historical(1981-2020)</td>
-  </tr>
-  <tr>
-    <td>MPI-ESM1-2-LR</td>
-    <td>Running</td>
-    <td>SSP585(2081-2100)</td>
-    <td>SSP126,245,585</td>
-  </tr>
-  <tr>
-    <td>EC-Earth3-Veg</td>
-    <td>Preparing</td>
-    <td>No</td>
-    <td>SSP126,245,585</td>
-  </tr>
-  <tr>
-    <td>FGOALS-f3-L</td>
-    <td>Preparing</td>
-    <td>No</td>
-    <td>SSP126,245,585</td>
-  </tr>
-  <tr>
-    <td>CESM2-WACCM</td>
-    <td>Preparing</td>
-    <td>No</td>
-    <td>SSP126,245,585</td>
-  </tr>
-  <tr>
-    <td>ACCESS-CM2</td>
-    <td>Preparing</td>
-    <td>No</td>
-    <td>SSP126,245,585</td>
-  </tr>
-  <tr>
-    <td>CanESM5</td>
-    <td>Preparing</td>
-    <td>No</td>
-    <td>SSP126,245,585</td>
-  </tr>
-</table>
 
 </div>
     </div>
