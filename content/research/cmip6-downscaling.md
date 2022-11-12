@@ -34,7 +34,7 @@ CanESM5 | Preparing | SSP126,245,585
 
 ## Downscaled Temperature (2083, Jul)
 
-
+{{< t2slider >}}
 
 
 ##  Downscaled Precipitation (2083, Jul)
