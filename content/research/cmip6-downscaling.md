@@ -39,6 +39,6 @@ CanESM5 | Preparing | SSP126,245,585
 
 ##  Downscaled Precipitation (2083, Jul)
 
-
+{{< preslider >}}
 
 
