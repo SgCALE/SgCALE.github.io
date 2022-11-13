@@ -1,2 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<script src="/js/particles.js" type="text/javascript"></script>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Data - We use computers to combat climate change.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/favicon-32x32.svg">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair&#43;Display:wght@600&amp;family=Source&#43;Sans&#43;Pro:wght@400;700&amp;display=swap" rel="stylesheet">
+
+
+
+  
+  
+  
+  
+    
+  
+  <link rel="stylesheet" href="/css/style.min.314862d5c153258cd00150d0d55a2f54dae013650ea27512b00c003915e82ef3.css">
+
+  
+
+  
+    
+    <meta property="og:title" content="Data"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="/resources/data/"/>
+    <meta property="og:image" content="https://www.zerostatic.io/theme/hugo-serif/hugo-serif-screenshot.png"/>
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@Xiaogang_he"/>
+    <meta name="twitter:creator" content="@Xiaogang_he"/>
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    
+    
+    <li class="menu-item-research ">
+      <a href="/research/">
+        <span>Research</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-resources ">
+      <a href="/resources/">
+        <span>Resources</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-team ">
+      <a href="/team/">
+        <span>Team</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-about ">
+      <a href="/about/">
+        <span>About</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-contact ">
+      <a href="/contact/">
+        <span>Contact</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img height=36px alt="We use computers to combat climate change." src="/images/logo/prjlogo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img height=36px alt="We use computers to combat climate change." src="/images/logo/prjlogo-mobile.jpg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    
+    
+    <li class="menu-item-research ">
+      <a href="/research/">
+        
+        <span>Research</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-resources ">
+      <a href="/resources/">
+        
+        <span>Resources</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-team ">
+      <a href="/team/">
+        
+        <span>Team</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-about ">
+      <a href="/about/">
+        
+        <span>About</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-contact ">
+      <a href="/contact/">
+        
+        <span>Contact</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <h1 class="title">Data</h1>
+      <div class="content"><h2 id="the-details-of-this-dataset-are-given-below">The details of this dataset are given below.</h2>
+<p>The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM 6 hourly (4 domains) forcing in NSCC HPC</p>
+<!-- raw HTML omitted -->
+<ol>
+<li>All output is daily netcdf files with equal area projection at three domains
+(12.5km: south east Asia; 2.5km: around Singapore; 500m: singapore)</li>
+<li>Files include names with wrfout_d01_year-mon-day_00:00:00 (first running)
+and wrfout_d01_year-mon-day_03:00:00 (restart running)</li>
+<li>Every file has 8 timesteps (0,3,6,9,12,15,18,21 ; or 3,6,9,12,15,18,21,0)</li>
+<li>Due to the restart running,there are one or more files named by the same day.
+7 timesteps in the last *_00:00:00 file are the same with the first *_03:00:00 file
+We can select the first timestep in last *_00:00:00 file by xarray, then select required var and mergetime all the file
+Must mind that precpitation include two vars and those are accumulated from the start</li>
+<li>We offer a shell code (based on cdo) and a python code (based on xarray) which help the 
+user extract the var  from wrfout and combine the vars to file in each year
+shell code (less than 8 minutes a year) is more quick than python code (over 14 minutes a year)
+for single var (Note: the xarray will output file with less size because this lib can maintain higher compression)</li>
+</ol>
+<h2 id="use-the-dataset">use the dataset</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">import xarray as xr
+import salem 
+import datetime
+<span style="color:#75715e">#Extract WRF variables from NAS; You must mount the NAS by samba in linux or windows</span>
+<span style="color:#75715e">#you must donload the code to your PC and run this in a local folder</span> 
+<span style="color:#66d9ef">for</span> yr in range<span style="color:#f92672">(</span>1981,2020<span style="color:#f92672">)</span>:
+  <span style="color:#75715e">#the dirwrf is mount point dir</span>  
+  <span style="color:#75715e">#mon=&#34;%02d&#34; % mn</span>
+  print<span style="color:#f92672">(</span>yr<span style="color:#f92672">)</span>
+  dirwrf<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/mnt/y/WRF_3domain_fERA5/d02/&#39;</span>+str<span style="color:#f92672">(</span>yr<span style="color:#f92672">)</span>+<span style="color:#e6db74">&#39;/&#39;</span>
+  ds<span style="color:#f92672">=</span>xr.open_mfdataset<span style="color:#f92672">(</span>dirwrf+<span style="color:#e6db74">&#39;wrfout_d02_*&#39;</span>,concat_dim<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Time&#39;</span>,combine<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;nested&#39;</span><span style="color:#f92672">)</span>
+  <span style="color:#75715e">#odir is the local dir for saving out data,&#39;./&#39; means present folder</span>
+  odir<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;./&#39;</span>
+  <span style="color:#75715e">#RAINNC is the var name, you can change this to your requirement;</span>
+  <span style="color:#75715e">#the whole output vars is in wrfout.vars_list.txt</span>
+  ds.RAINNC.to_netcdf<span style="color:#f92672">(</span>odir+<span style="color:#e6db74">&#39;RAINNC.&#39;</span>+str<span style="color:#f92672">(</span>yr<span style="color:#f92672">)</span>+<span style="color:#e6db74">&#39;.nc&#39;</span><span style="color:#f92672">)</span>
+  <span style="color:#75715e">#you can also use salem.deacc to de-accumulate the variables(RAINC RAINNC)</span>
+  <span style="color:#75715e">#df=ds.RAINNC.salem.deacc(as_rate=False)</span>
+  <span style="color:#75715e">#df.to_netcdf(odir+&#39;RAINNC.&#39;+str(yr)+&#39;.nc&#39;)</span>
+  time <span style="color:#f92672">=</span> datetime.datetime.now<span style="color:#f92672">()</span>.strftime<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;%Y-%m-%d %H:%M:%S&#39;</span><span style="color:#f92672">)</span>
+  print<span style="color:#f92672">(</span>time<span style="color:#f92672">)</span>
+</code></pre></div><h2 id="license">license</h2>
+<p>All the code in this repository is <a href="https://choosealicense.com/licenses/mit/">MIT</a> licensed, but we request that you please provide attribution if reusing any of our digital content (graphics, logo, copy, etc.).</p>
+<h2 id="about-us">about us</h2>
+<p>SgCALE is a non-profit project that uses data and science for climate action. We aim to improve the scientific understanding of climate changes in Southeast Asia with open data. Find out more at <a href="https://SgCALE.github.io/downscaling">https://SgCALE.github.io/downscaling</a> or get in touch by <a href="https://SgCALE.github.io/downscaling/issues/new">opening an issue</a> or <a href="mailto:hexg@u.nus.edu">sending us an email</a>.</p>
+</div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h3 class="footer-title">We use computers to combat climate change.</h3>
+          <div id="footer-menu" class="footer-menu">
+  <ul>
+    
+    
+    
+    
+    <li class="menu-item-home ">
+      <a href="/">
+        
+        <span>Home</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-contact ">
+      <a href="/contact/">
+        
+        <span>Contact</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+            
+<div class="social">
+    
+        <a href="https://github.com/SgCALE/" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+    
+        <a href="https://twitter.com/Xiaogang_he" target="blank"><img src="/images/social/twitter.svg" title="Twitter" alt="Twitter" /></a>
+    
+</div>
+
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+
+  
+  
+
+  
+    
+  
+  <script type="text/javascript" src="/js/scripts.min.bf1e1f7ae8e03db5f012356e825843facdff51c0a559cb0d27fe2bbe1db405c2.js"></script>
+
+  
+
+
+  
+
+
+</body>
+
+</html>
