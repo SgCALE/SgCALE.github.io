@@ -27,7 +27,7 @@ These is our finished, running, and future downscaling simulation tasks
 
 Model Name | Simulation state | Finished period	      | Plan task
 --- | --- |-----------------------| ---
-*ERA5* | `Finished` | Historical(1981-2020) | **Historical(1981-2020)**
+ERA5 | Finished | Historical(1981-2020) | Historical(1981-2020)
 MPI-ESM1-2-LR | Running | SSP585(2081-2100)     | SSP126,245,585
 EC-Earth3-Veg | Preparing | No                    | SSP126,245,585
 FGOALS-f3-L	 | Preparing |  No                    | SSP126,245,585
