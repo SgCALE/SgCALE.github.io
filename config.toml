@@ -19,7 +19,7 @@ title = "We use computers to combat climate change."
     show_services_button = false # show / hide the "view all services" button
 
   [params.logo]
-    mobile = "images/logo/prjlogo-mobile.jpg"
+    mobile = "images/logo/prjlogo-mobile.png"
     mobile_height = "36px"
     desktop = "images/logo/prjlogo.png"
     desktop_height = "36px"
