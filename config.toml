@@ -2,7 +2,7 @@ baseURL = "/"
 themesDir = "themes"
 theme = "hugo-serif-theme"
 languageCode = "en-us"
-title = "We use computers to safeguard Singapore against climate change."
+title = "We use computers to combat climate change."
 
 [module]
   [module.hugoVersion]
@@ -19,11 +19,11 @@ title = "We use computers to safeguard Singapore against climate change."
     show_services_button = false # show / hide the "view all services" button
 
   [params.logo]
-    mobile = "images/logo/prjlogo-mobile.svg"
+    mobile = "images/logo/prjlogo-mobile.jpg"
     mobile_height = "36px"
     desktop = "images/logo/prjlogo.svg"
     desktop_height = "36px"
-    alt = "We use computers to safeguard Singapore against climate change."
+    alt = "We use computers to combat climate change."
 
   [params.fonts]
     # sets the google font link in layouts/partials/google-fonts.html

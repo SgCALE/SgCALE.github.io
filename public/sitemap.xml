@@ -12,12 +12,20 @@
   </url>
   
   <url>
+    <loc>/resources/cmip6-downscaling/</loc>
+  </url>
+  
+  <url>
     <loc>/team/sage-kirk/</loc>
     <lastmod>2018-11-19T10:47:58+10:00</lastmod>
   </url>
   
   <url>
     <loc>/research/business-advisory/</loc>
+  </url>
+  
+  <url>
+    <loc>/resources/business-advisory/</loc>
   </url>
   
   <url>
@@ -35,12 +43,20 @@
   </url>
   
   <url>
+    <loc>/resources/business-sales/</loc>
+  </url>
+  
+  <url>
     <loc>/team/tamara-ells/</loc>
     <lastmod>2018-12-20T13:44:55+10:00</lastmod>
   </url>
   
   <url>
     <loc>/research/mergers/</loc>
+  </url>
+  
+  <url>
+    <loc>/resources/mergers/</loc>
   </url>
   
   <url>
@@ -53,7 +69,15 @@
   </url>
   
   <url>
+    <loc>/resources/superannuation/</loc>
+  </url>
+  
+  <url>
     <loc>/research/accounting/</loc>
+  </url>
+  
+  <url>
+    <loc>/resources/accounting/</loc>
   </url>
   
   <url>
@@ -86,6 +110,10 @@
   
   <url>
     <loc>/research/</loc>
+  </url>
+  
+  <url>
+    <loc>/resources/</loc>
   </url>
   
   <url>

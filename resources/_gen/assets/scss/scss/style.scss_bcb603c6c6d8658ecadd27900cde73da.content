@@ -4364,7 +4364,7 @@ ol {
   overflow: hidden;
   background-color: #f6f7ff;
   border-radius: 4px;
-  width: 100%;
+  width: 73%;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -4564,9 +4564,9 @@ ol {
       width: 800px; } }
   @media (min-width: 1300px) {
     .intro-image-absolute {
-      bottom: -100px;
-      left: -70px;
-      width: 850px; } }
+      bottom: -30px;
+      left: -20px;
+      width: 625px; } }
 .intro-image-hide-mobile {
   display: none; }
   @media (min-width: 768px) {
