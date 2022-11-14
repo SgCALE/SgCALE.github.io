@@ -3,10 +3,12 @@ title: 'About'
 date: 2018-02-22T17:01:34+07:00
 ---
 
-Lorem markdownum aequalis strigis. _Saetigeri iubeas_, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
-
+We are a group of AI enthusiasts with a diverse background in climate science, 
+hydrology, Earth system modeling, and civil and environmental engineering. 
+Our mission is to build Singapore’s Climate ArtificiaL intelligence 
+Engine (SgCALE) to predict highly-localized urban climate extremes 
+e.g., floods, droughts, heat waves) harnessing machine learning.
+<!--
 ## Ne verba patulosque numen vix libet
 
 Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis.
@@ -48,3 +50,4 @@ iuro nec est a iamque est vestigia deum chelydri me bene contra, Ausoniae inopem
 et eripiat, gnato. Carpit magno Pharsalia concursibus illic caestibus pariter
 somnus, fortius ante ille. Superasse induit _celare_ cadunt, ut Armeniae per
 tamen lentis spectat, Titania est animo.
+-->
