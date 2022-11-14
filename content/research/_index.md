@@ -6,17 +6,7 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
 
-<<<<<<< HEAD
-# Overview
-
-SgCALE provides scalable and predictive weather and climate analytics 
-that can accurately and seamlessly simulate extreme weather events across 
-various temporal (hourly, daily, sub-seasonal, seasonal, and decadal) and spatial 
-(e.g., building, community, city) scales, mitigate their impacts in real-time, and 
-enable collaboration with various stakeholders to provide tailored guidance towards 
-climate-resilient city planning.
-=======
 # Overview 
 
 SgCALE provides scalable and predictive weather and climate analytics that can accurately and seamlessly simulate extreme weather events across various temporal (hourly, daily, sub-seasonal, seasonal, and decadal) and spatial (e.g., building, community, city) scales, mitigate their impacts in real-time, and enable collaboration with various stakeholders to provide tailored guidance towards climate-resilient city planning.
->>>>>>> 9c1233ce9420aa58e9941cd41c902cd23024e8b9
+
