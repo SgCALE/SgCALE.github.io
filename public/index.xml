@@ -60,21 +60,21 @@ The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM 6 hourly (4 domai
     </item>
     
     <item>
+      <title>Climate Emulator</title>
+      <link>/research/climate-emulator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/research/climate-emulator/</guid>
+      <description>contents comming soon</description>
+    </item>
+    
+    <item>
       <title>Climate Science</title>
       <link>/mainpage/climate-science/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mainpage/climate-science/</guid>
       <description>Advanced physical understanding of climate extremes</description>
-    </item>
-    
-    <item>
-      <title>Complex Climate Networks</title>
-      <link>/research/complex-climate-networks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/research/complex-climate-networks/</guid>
-      <description>contents comming soon</description>
     </item>
     
     <item>
@@ -105,6 +105,15 @@ The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM 6 hourly (4 domai
     </item>
     
     <item>
+      <title>Complex Climate Networks</title>
+      <link>/research/complex-climate-networks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/research/complex-climate-networks/</guid>
+      <description>contents comming soon</description>
+    </item>
+    
+    <item>
       <title>Tutorials</title>
       <link>/resource/tutorials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -112,15 +121,6 @@ The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM 6 hourly (4 domai
       <guid>/resource/tutorials/</guid>
       <description>Jupyter Book for Python Climate Visuals
 https://github.com/XiaogangHe/python-climate-visuals</description>
-    </item>
-    
-    <item>
-      <title>Weather Forecast</title>
-      <link>/research/weather-forecast/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/research/weather-forecast/</guid>
-      <description>contents comming soon</description>
     </item>
     
     <item>
@@ -142,11 +142,11 @@ https://github.com/XiaogangHe/python-climate-visuals</description>
     </item>
     
     <item>
-      <title>Compound Flooding</title>
-      <link>/research/compound-flooding/</link>
+      <title>Weather Forecast</title>
+      <link>/research/weather-forecast/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/research/compound-flooding/</guid>
+      <guid>/research/weather-forecast/</guid>
       <description>contents comming soon</description>
     </item>
     
@@ -160,11 +160,11 @@ https://github.com/XiaogangHe/python-climate-visuals</description>
     </item>
     
     <item>
-      <title>Seamless Drought Prediction</title>
-      <link>/research/seamless-drought-prediction/</link>
+      <title>Compound Flooding</title>
+      <link>/research/compound-flooding/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/research/seamless-drought-prediction/</guid>
+      <guid>/research/compound-flooding/</guid>
       <description>contents comming soon</description>
     </item>
     
@@ -175,6 +175,15 @@ https://github.com/XiaogangHe/python-climate-visuals</description>
       
       <guid>/team/jack/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Seamless Drought Prediction</title>
+      <link>/research/seamless-drought-prediction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/research/seamless-drought-prediction/</guid>
+      <description>contents comming soon</description>
     </item>
     
     <item>
