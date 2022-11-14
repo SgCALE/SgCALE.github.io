@@ -1,7 +1,7 @@
 ---
 title: 'Research - SgCALE'
 description: 'We use computers to combat climate change'
-intro_image: "images/illustrations/reading.svg"
+intro_image: "images/illustrations/research.svg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
