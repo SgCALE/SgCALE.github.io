@@ -43,7 +43,7 @@ ERA5-based mean climate and interannual variance, and with a non-linear trend fr
  with a temporal scale of six-hour.
 
 The main contributions of this dataset are twofold, 1) we provide the open-source and high-resolution 
-(12.5km: southeast Asia; 2.5km: Southern Malay peninsula; 500m: Singapore, as shown in Fig. 1) datasets, 
+(12.5km: southeast Asia; 2.5km: Southern Malay Peninsula; 500m: Singapore, as shown in Fig. 1) datasets, 
 including precipitation, wind, temperature, radiation, etc; 2) this bias-corrected and downscaled 
 dataset is of better quality than the existing dynamical work (e.g., CORDEX) in southeast Asia in terms
  of its ability to reproduce regional climate extremes, spatial patterns, etc. This dataset will be 
@@ -70,7 +70,7 @@ The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM 6 hourly (4 domai
 </div>
 
 1. All output is daily netcdf files with equal area projection at three domains
-   (12.5km: south east Asia; 2.5km: around Singapore; 500m: singapore)
+   (12.5km: Southeast Asia; 2.5km: Southern Malay Peninsula; 500m: Singapore)
 2. Files include names with wrfout_d01_year-mon-day_00:00:00 (first running)
    and wrfout_d01_year-mon-day_03:00:00 (restart running)
 3. Every file has 8 timesteps (0,3,6,9,12,15,18,21 ; or 3,6,9,12,15,18,21,0)
