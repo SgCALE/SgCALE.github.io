@@ -1,0 +1,8 @@
+<div class="research research-summary">
+  <div class="research-content">
+    <h2 class="research-title">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h2>
+    <p>{{ .Content | plainify | htmlUnescape | truncate (.Site.Params.research.summary_truncate | default 60 ) "" }}</p>
+  </div>
+</div>

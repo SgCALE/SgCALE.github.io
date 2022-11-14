@@ -5,9 +5,8 @@ weight: 1
 draft: false
 featured: true
 ---
-## The details of this dataset are given below.
 The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM 6 hourly (4 domains) forcing in NSCC HPC
-<div align=center>
+![CMIP6 Downscling](/images/domains_cmip6.png)
 <img
   src='https://github.com/longbiao1993/CMIP6/blob/main/data/figures/domains_cmip6.png'
   height='400'

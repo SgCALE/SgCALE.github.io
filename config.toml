@@ -16,7 +16,7 @@ title = "We use computers to combat climate change."
 
   [params.homepage]
     show_contact_box = true      # show / hide the contaxt box on the homepage
-    show_services_button = false # show / hide the "view all services" button
+    show_research_button = false # show / hide the "view all research" button
 
   [params.logo]
     mobile = "images/logo/prjlogo-mobile.png"
@@ -43,9 +43,10 @@ title = "We use computers to combat climate change."
     meta_twitter_creator = "@Xiaogang_he"
     meta_og_image = "https://www.zerostatic.io/theme/hugo-serif/hugo-serif-screenshot.png"
 
-  [params.services]
-    summary_truncate = 120 # How many characters to include in the summary of the services before truncating
-
+  [params.research]
+    summary_truncate = 73 # How many characters to include in the summary of the research before truncating
+  [params.resources]
+    summary_truncate = 73 # How many characters to include in the summary of the resources before truncating
   [params.team]
     summary_large_truncate = 120 # How many characters to include in the summary of the team bios (large layout) before truncating
 
