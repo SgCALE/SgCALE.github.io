@@ -24,14 +24,13 @@ In this work, we apply a hybrid statistical-dynamical downscaling, following the
 
 ##
 ## Experiments developed and developing
-These is our finished, running, and future downscaling simulation tasks
 
-Model Name | Simulation state | Finished period	      | Scenerio
---- | --- |-----------------------| ---
-ERA5 | Finished | Historical(1981-2020) | Historical(1981-2020)
-MPI-ESM1-2-LR | Running | SSP585(2081-2100)     | SSP126,245,585
-EC-Earth3-Veg | Preparing | No                    | SSP126,245,585
-FGOALS-f3-L	 | Preparing |  No                    | SSP126,245,585
-CESM2-WACCM | Preparing |   No                   | SSP126,245,585
-ACCESS-CM2 | Preparing |    No                  | SSP126,245,585
-CanESM5 | Preparing |       No               | SSP126,245,585
+| Model Name | Period | Scenerio |
+| :---: | :---: |:-----------------------:| :---: |
+| ERA5  | Historical(1981-2020)(Finished) | Historical(1981-2020) |
+| MPI-ESM1-2-LR | SSP585(2081-2100)(Ongoing)     | SSP126,245,585 |
+| EC-Earth3-Veg  | No(Ongoing)                    | SSP126,245,585 |
+| FGOALS-f3-L	  |  No(Ongoing)                    | SSP126,245,585 |
+| CESM2-WACCM  |   No(Ongoing)                   | SSP126,245,585 |
+| ACCESS-CM2  |    No(Ongoing)                  | SSP126,245,585 |
+| CanESM5  |       No(Ongoing)               | SSP126,245,585 |
