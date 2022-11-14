@@ -16,8 +16,10 @@
   {{ if hugo.IsProduction }}
     {{ $style = $style | minify | fingerprint }}
   {{ end }}
+  <!-- <link rel="stylesheet" href="/css/tbcmip6.css"> -->
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
   <!-- <link rel="stylesheet" href="/css/bg.css"> -->
+
   {{ block "header_css" . }}{{ end }}
 
   {{ block "meta_tags" . }}

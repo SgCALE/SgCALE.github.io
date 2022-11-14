@@ -1,0 +1,14 @@
+html,
+td, th {  
+	border: 1px solid rgb(232, 8, 187);
+	text-align: left;
+  }
+  
+  table {
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  th, td {
+	padding: 15px;
+  }

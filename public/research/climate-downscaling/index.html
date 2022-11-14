@@ -21,8 +21,10 @@
   
     
   
+  
   <link rel="stylesheet" href="/css/style.min.314862d5c153258cd00150d0d55a2f54dae013650ea27512b00c003915e82ef3.css">
-  <link rel="stylesheet" href="/css/bg.css">
+  
+
   
 
   
@@ -161,6 +163,22 @@
     <div class="col-12 col-md-8">
       <div class="service service-single">
         <h1 class="title">Climate Downscaling</h1>
+        
+        <style>
+          table, td, th {  
+        border: 1px solid rgb(0, 0, 0);
+        text-align: left;
+        }
+        
+        table {
+        border-collapse: collapse;
+        width: 100%;
+        }
+        
+        th, td {
+        padding: 15px;
+        }
+        </style>
         <div class="content"><p>Hybrid statistical-dynamic downscaling based on multi-model ensembles</p>
 <h2 id="what-we-are-releasing">What we are releasing</h2>
 <p>We are releasing a bias-corrected and downscaled dataset based on 14 Coupled Model Intercomparison Project 6 (CMIP6) global climate models (GCMs) and the European Centre for Medium-Range Weather Forecasts Reanalysis 5 (ERA5) dataset. The dataset is simulated by <strong>ERA5 (3 domains)</strong> and <strong>GCMs (4 domains)</strong> forcing in NSCC HPC as shown in the following figure.</p>
@@ -338,64 +356,88 @@
 </p>
 <h2 id="whats-downscaling">What&rsquo;s downscaling</h2>
 <p>GCMs under CMIP6 have been widely used to investigate climate change impacts and put forward associated adaptation and mitigation strategies. However, the relatively coarse spatial resolutions (usually 100~300km) preclude their direct applications in regional scales, where the analysis (e.g., hydrological model simulation) is applied. To bridge this gap, a typical approach is to ‘refine’ the information from GCMs through regional climate downscaling experiments, which can be conducted statistically, dynamically, or a combination thereof. Statistical downscaling establishes relationships between large-scale climate indicators and small-scale climate variables in the reference (historical) period. Subsequently, these relationships are kept unchanged in the future and used to predict the future variables. On the other hand, dynamical downscaling operates based on the physical processes and the associated interactions in the climate systems and thus can produce a full set of regional climate simulations (e.g., temperature and precipitation fields) that are dynamically consistent. However, traditional dynamical downscaling contains significant biases that are transferred from GCMs and may be enhanced during the process of downscaling, thus degrading the downscaled results. One approach to remove these biases is the hybrid statistical-dynamical downscaling, where GCMs are firstly bias-corrected, and subsequently used as lower and lateral boundary conditions to drive the regional climate models (RCMs).</p>
+<h3 id="heading"></h3>
 <p>In this work, we apply a hybrid statistical-dynamical downscaling, following the approach of Xu et al. 2021. The bias-corrected dataset is adjusted to resemble ERA5-based mean climate and interannual variance, and with a non-linear trend from the ensemble mean of the 14 CMIP6 models. The dataset spans a historical period of 1979–2014 and future scenarios (SSP585) of 2015–2100, with a temporal scale of six-hour. Efforts are underway to develop future simulations and the available model outputs are listed below.</p>
-<h2 id="heading"></h2>
+<h2 id="heading-1"></h2>
 <h2 id="experiments-developed-and-developing">Experiments developed and developing</h2>
-<p>These is our finished, running, and future downscaling simulation tasks</p>
-<table>
-<thead>
-<tr>
-<th>Model Name</th>
-<th>Simulation state</th>
-<th>Finished period</th>
-<th>Plan task</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ERA5</td>
-<td>Finished</td>
-<td>Historical(1981-2020)</td>
-<td>Historical(1981-2020)</td>
-</tr>
-<tr>
-<td>MPI-ESM1-2-LR</td>
-<td>Running</td>
-<td>SSP585(2081-2100)</td>
-<td>SSP126,245,585</td>
-</tr>
-<tr>
-<td>EC-Earth3-Veg</td>
-<td>Preparing</td>
-<td>No</td>
-<td>SSP126,245,585</td>
-</tr>
-<tr>
-<td>FGOALS-f3-L</td>
-<td>Preparing</td>
-<td>No</td>
-<td>SSP126,245,585</td>
-</tr>
-<tr>
-<td>CESM2-WACCM</td>
-<td>Preparing</td>
-<td>No</td>
-<td>SSP126,245,585</td>
-</tr>
-<tr>
-<td>ACCESS-CM2</td>
-<td>Preparing</td>
-<td>No</td>
-<td>SSP126,245,585</td>
-</tr>
-<tr>
-<td>CanESM5</td>
-<td>Preparing</td>
-<td>No</td>
-<td>SSP126,245,585</td>
-</tr>
-</tbody>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+
+  <style>
+    table, td, th {  
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+  }
+  
+  table {
+  border-collapse: collapse;
+  width: 100%;
+  }
+  
+  th, td {
+  padding: 15px;
+  }
+  </style>
+
+<body class='page page-default-single'>
+ 
+  <table style="width:100%">
+       
+    <tr>
+
+      <th>        </th>
+      <th>Rainfall</th>
+      <th>Temperature</th>
+      <th>Winds</th>
+      <th>Specific humidity</th>
+    </tr>
+    <tr>
+
+      <td>Domain (Resolution)</td>
+      <td colspan="4">Great Southeast Asia (62.5km); Southeast Asia (12.5km); Southern Malay Peninsula (2.5km); Singapore (500m) </td>
+    </tr>
+    <tr>
+      <td>MPI-ESM1-2-LR</td>
+      <td>Running</td>
+      <td>SSP585(2081-2100)</td>
+      <td>SSP126,245,585</td>
+    </tr>
+    <tr>
+      <td>EC-Earth3-Veg</td>
+      <td>Preparing</td>
+      <td>No</td>
+      <td>SSP126,245,585</td>
+    </tr>
+    <tr>
+      <td>FGOALS-f3-L</td>
+      <td>Preparing</td>
+      <td>No</td>
+      <td>SSP126,245,585</td>
+    </tr>
+    <tr>
+      <td>CESM2-WACCM</td>
+      <td>Preparing</td>
+      <td>No</td>
+      <td>SSP126,245,585</td>
+    </tr>
+    <tr>
+      <td>ACCESS-CM2</td>
+      <td>Preparing</td>
+      <td>No</td>
+      <td>SSP126,245,585</td>
+    </tr>
+    <tr>
+      <td>CanESM5</td>
+      <td>Preparing</td>
+      <td>No</td>
+      <td>SSP126,245,585</td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
+
 </div>
       </div>
     </div>
@@ -488,20 +530,7 @@
   
 
 
-  <script type="text/javascript">
-    window.onload = function() {
-      Particles.init({
-        selector: '.background',
-        connectParticles: "true",
-        color: '#4682B4',
-        maxParticles:'50'
-        
-      });
-    };
-
-   </script>
-    <canvas class="background"></canvas>
-  <script src="/js/particles.js"></script>
+  
 </body>
 
 </html>
