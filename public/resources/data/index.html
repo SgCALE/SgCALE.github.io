@@ -21,8 +21,10 @@
   
     
   
+  
   <link rel="stylesheet" href="/css/style.min.314862d5c153258cd00150d0d55a2f54dae013650ea27512b00c003915e82ef3.css">
-  <link rel="stylesheet" href="/css/bg.css">
+  
+
   
 
   
@@ -161,6 +163,22 @@
     <div class="col-12 col-md-8">
       <div class="service service-single">
         <h1 class="title">Data</h1>
+        
+        <style>
+          table, td, th {  
+        border: 1px solid rgb(0, 0, 0);
+        text-align: left;
+        }
+        
+        table {
+        border-collapse: collapse;
+        width: 100%;
+        }
+        
+        th, td {
+        padding: 15px;
+        }
+        </style>
         <div class="content"><p>The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM 6 hourly (4 domains) forcing in NSCC HPC
 <img src="/images/domains_cmip6.png" alt="CMIP6 Downscling"></p>
 <ol>
@@ -296,20 +314,7 @@ import datetime
   
 
 
-  <script type="text/javascript">
-    window.onload = function() {
-      Particles.init({
-        selector: '.background',
-        connectParticles: "true",
-        color: '#4682B4',
-        maxParticles:'50'
-        
-      });
-    };
-
-   </script>
-    <canvas class="background"></canvas>
-  <script src="/js/particles.js"></script>
+  
 </body>
 
 </html>
