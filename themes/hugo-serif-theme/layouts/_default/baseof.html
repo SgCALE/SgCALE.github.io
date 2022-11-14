@@ -7,7 +7,7 @@
   <title>{{ block "title" . }}{{ .Params.meta_title | default (printf "%s - %s" .Title .Site.Title) }}{{ end }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="{{ "favicon-32x32.svg" | relURL }}">
-
+  
   {{ partial "google-fonts.html" . }}
 
   <!-- CSS-->
@@ -17,7 +17,7 @@
     {{ $style = $style | minify | fingerprint }}
   {{ end }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-
+  <link rel="stylesheet" href="/css/bg.css">
   {{ block "header_css" . }}{{ end }}
 
   {{ block "meta_tags" . }}
@@ -57,6 +57,19 @@
 
   {{ partial "google-tag-manager.html" . }}
   {{ partial "google-analytics.html" . }}
+  <script type="text/javascript">
+    window.onload = function() {
+      Particles.init({
+        selector: '.background',
+        connectParticles: "true",
+        color: '#4682B4',
+        maxParticles:'50'
+        
+      });
+    };
+
+   </script>
+  {{ partial "background.html" . }}
 </body>
 
 </html>
