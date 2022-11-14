@@ -16,7 +16,7 @@
   </url>
   
   <url>
-    <loc>/resources/data/</loc>
+    <loc>/resource/data/</loc>
   </url>
   
   <url>
@@ -33,7 +33,7 @@
   </url>
   
   <url>
-    <loc>/resources/tools/</loc>
+    <loc>/resource/tools/</loc>
   </url>
   
   <url>
@@ -46,7 +46,7 @@
   </url>
   
   <url>
-    <loc>/resources/tutorials/</loc>
+    <loc>/resource/tutorials/</loc>
   </url>
   
   <url>
@@ -117,7 +117,7 @@
   </url>
   
   <url>
-    <loc>/resources/</loc>
+    <loc>/resource/</loc>
   </url>
   
   <url>

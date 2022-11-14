@@ -42,11 +42,12 @@ What&amp;rsquo;s new The main contributions of this dataset are twofold, 1) we p
     
     <item>
       <title>Data</title>
-      <link>/resources/data/</link>
+      <link>/resource/data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/resources/data/</guid>
-      <description>The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM 6 hourly (4 domains) forcing in NSCC HPC  All output is daily netcdf files with equal area projection at three domains (12.5km: south east Asia; 2.5km: around Singapore; 500m: singapore) Files include names with wrfout_d01_year-mon-day_00:00:00 (first running) and wrfout_d01_year-mon-day_03:00:00 (restart running) Every file has 8 timesteps (0,3,6,9,12,15,18,21 ; or 3,6,9,12,15,18,21,0) Due to the restart running,there are one or more files named by the same day.</description>
+      <guid>/resource/data/</guid>
+      <description>Multi-scale, high-resolution, and high-fidelity climate simulations
+The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM 6 hourly (4 domains) forcing in NSCC HPC  All output is daily netcdf files with equal area projection at three domains (12.5km: south east Asia; 2.5km: around Singapore; 500m: singapore) Files include names with wrfout_d01_year-mon-day_00:00:00 (first running) and wrfout_d01_year-mon-day_03:00:00 (restart running) Every file has 8 timesteps (0,3,6,9,12,15,18,21 ; or 3,6,9,12,15,18,21,0) Due to the restart running,there are one or more files named by the same day.</description>
     </item>
     
     <item>
@@ -78,10 +79,10 @@ What&amp;rsquo;s new The main contributions of this dataset are twofold, 1) we p
     
     <item>
       <title>Tools</title>
-      <link>/resources/tools/</link>
+      <link>/resource/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/resources/tools/</guid>
+      <guid>/resource/tools/</guid>
       <description>contents comming soon</description>
     </item>
     
@@ -105,11 +106,11 @@ What&amp;rsquo;s new The main contributions of this dataset are twofold, 1) we p
     
     <item>
       <title>Tutorials</title>
-      <link>/resources/tutorials/</link>
+      <link>/resource/tutorials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/resources/tutorials/</guid>
-      <description>This repository holds the Jupyter Book source for Python Climate Visuals
+      <guid>/resource/tutorials/</guid>
+      <description>Jupyter Book for Python Climate Visuals
 https://github.com/XiaogangHe/python-climate-visuals</description>
     </item>
     
