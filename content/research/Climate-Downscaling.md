@@ -23,6 +23,6 @@ GCMs under CMIP6 have been widely used to investigate climate change impacts and
 In this work, we apply a hybrid statistical-dynamical downscaling, following the approach of Xu et al. 2021. The bias-corrected dataset is adjusted to resemble ERA5-based mean climate and interannual variance, and with a non-linear trend from the ensemble mean of the 14 CMIP6 models. The dataset spans a historical period of 1979–2014 and future scenarios (SSP585) of 2015–2100, with a temporal scale of six-hour. Efforts are underway to develop future simulations and the available model outputs are listed below.
 
 ##
-## Experiments developed and developing
+## Experiments 
 
 {{< tabcmip6 >}}

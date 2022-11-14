@@ -5,6 +5,6 @@ featured: true
 draft: false
 weight: 3
 ---
-This repository holds the Jupyter Book source for Python Climate Visuals
+Jupyter Book for Python Climate Visuals
 
 https://github.com/XiaogangHe/python-climate-visuals

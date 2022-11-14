@@ -45,8 +45,8 @@ title = "We use computers to combat climate change."
 
   [params.research]
     summary_truncate = 73 # How many characters to include in the summary of the research before truncating
-  [params.resources]
-    summary_truncate = 73 # How many characters to include in the summary of the resources before truncating
+  [params.resource]
+    summary_truncate = 70 # How many characters to include in the summary of the resources before truncating
   [params.team]
     summary_large_truncate = 120 # How many characters to include in the summary of the team bios (large layout) before truncating
 
@@ -59,7 +59,7 @@ title = "We use computers to combat climate change."
 
   [[menu.main]]
     name = "Resources"
-    url = "/resources/"
+    url = "/resource/"
     weight = 2
 
   [[menu.main]]

@@ -1,0 +1,8 @@
+<div class="resource resource-summary">
+  <div class="resource-content">
+    <h2 class="resource-title">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h2>
+    <p>{{ .Content | plainify | htmlUnescape | truncate (.Site.Params.resource.summary_truncate | default 90 ) "" }}</p>
+  </div>
+</div>
