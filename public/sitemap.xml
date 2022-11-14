@@ -25,11 +25,11 @@
   </url>
   
   <url>
-    <loc>/mainpage/climate-science/</loc>
+    <loc>/research/climate-emulator/</loc>
   </url>
   
   <url>
-    <loc>/research/complex-climate-networks/</loc>
+    <loc>/mainpage/climate-science/</loc>
   </url>
   
   <url>
@@ -46,11 +46,11 @@
   </url>
   
   <url>
-    <loc>/resource/tutorials/</loc>
+    <loc>/research/complex-climate-networks/</loc>
   </url>
   
   <url>
-    <loc>/research/weather-forecast/</loc>
+    <loc>/resource/tutorials/</loc>
   </url>
   
   <url>
@@ -63,7 +63,7 @@
   </url>
   
   <url>
-    <loc>/research/compound-flooding/</loc>
+    <loc>/research/weather-forecast/</loc>
   </url>
   
   <url>
@@ -72,12 +72,16 @@
   </url>
   
   <url>
-    <loc>/research/seamless-drought-prediction/</loc>
+    <loc>/research/compound-flooding/</loc>
   </url>
   
   <url>
     <loc>/team/jack/</loc>
     <lastmod>2018-12-20T13:45:06+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/seamless-drought-prediction/</loc>
   </url>
   
   <url>
