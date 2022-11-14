@@ -17,7 +17,7 @@
     {{ $style = $style | minify | fingerprint }}
   {{ end }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-  <link rel="stylesheet" href="/css/bg.css">
+  <!-- <link rel="stylesheet" href="/css/bg.css"> -->
   {{ block "header_css" . }}{{ end }}
 
   {{ block "meta_tags" . }}
@@ -57,7 +57,7 @@
 
   {{ partial "google-tag-manager.html" . }}
   {{ partial "google-analytics.html" . }}
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     window.onload = function() {
       Particles.init({
         selector: '.background',
@@ -69,7 +69,7 @@
     };
 
    </script>
-  {{ partial "background.html" . }}
+  {{ partial "background.html" . }} -->
 </body>
 
 </html>

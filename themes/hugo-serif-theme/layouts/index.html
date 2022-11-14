@@ -18,6 +18,21 @@
           src="{{ .Params.intro_image | relURL }}" />
       </div>
       {{ end }}
+      <link rel="stylesheet" href="/css/bg.css">
+      <script type="text/javascript">
+        window.onload = function() {
+          Particles.init({
+            selector: '.background',
+            connectParticles: "true",
+            color: '#4682B4',
+            maxParticles:'50'
+            
+          });
+        };
+    
+       </script>
+      {{ partial "background.html" . }}
+
     </div>
   </div>
 </div>
