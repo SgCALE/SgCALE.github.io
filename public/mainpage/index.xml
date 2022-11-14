@@ -5,7 +5,11 @@
     <link>/mainpage/</link>
     <description>Recent content in Mainpages on We use computers to combat climate change.</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/mainpage/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    
+	<atom:link href="/mainpage/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Climate Intelligence</title>
       <link>/mainpage/climate-intelligence/</link>
