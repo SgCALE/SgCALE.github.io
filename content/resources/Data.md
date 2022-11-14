@@ -7,11 +7,7 @@ featured: true
 ---
 The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM 6 hourly (4 domains) forcing in NSCC HPC
 ![CMIP6 Downscling](/images/domains_cmip6.png)
-<img
-  src='https://github.com/longbiao1993/CMIP6/blob/main/data/figures/domains_cmip6.png'
-  height='400'
-/>
-</div>
+
 
 1. All output is daily netcdf files with equal area projection at three domains
    (12.5km: south east Asia; 2.5km: around Singapore; 500m: singapore)
