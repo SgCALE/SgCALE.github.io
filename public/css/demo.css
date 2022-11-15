@@ -16,7 +16,7 @@ p {
 .container {			
 	max-width: 960px;
 	margin: 0 auto;
-	padding: 0 0.75rem;
+	padding: 0 0rem;
 }
 .heading-font {
 	font-family: "Six Caps", sans-serif;
