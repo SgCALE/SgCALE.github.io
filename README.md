@@ -45,7 +45,7 @@ ERA5-based mean climate and interannual variance, and with a non-linear trend fr
 The main contributions of this dataset are twofold, 1) we provide the open-source and high-resolution 
 (12.5km: southeast Asia; 2.5km: Southern Malay Peninsula; 500m: Singapore, as shown in Fig. 1) datasets, 
 including precipitation, wind, temperature, radiation, etc; 2) through our experiment, this bias-corrected and downscaled 
-dataset is of better quality than the existing dynamical work (e.g., CORDEX) in southeast Asia in terms
+dataset is of better quality than the existing dynamical scaling work (e.g., CORDEX) in southeast Asia in terms
  of its ability to reproduce regional climate extremes, spatial patterns, etc. This dataset will be 
  useful for policy-makers and researchers to make the pathways for resilient planning to reduce climate change impacts.
 
