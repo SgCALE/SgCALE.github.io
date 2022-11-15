@@ -25,3 +25,7 @@ In this work, we apply a hybrid statistical-dynamical downscaling, following the
 ## What's new
 The main contributions of this dataset are twofold, 1) we provide the open-source and high-resolution (12.5km: Southeast Asia; 2.5km:Southern Malay Peninsula; 500m: Singapore, as shown in the following Figures) datasets, including precipitation, wind, temperature, radiation, etc; 2) this bias-corrected and downscaled dataset is of better quality than the existing dynamical work (e.g., CORDEX) in southeast Asia in terms of its ability to reproduce regional climate extremes, spatial patterns, etc. This dataset will be useful for policy-makers and researchers to make the pathways for resilient planning to reduce climate change impacts.
 {{< t2preslider >}}
+
+##Experiments
+
+{{< tabcmip6 >}}
