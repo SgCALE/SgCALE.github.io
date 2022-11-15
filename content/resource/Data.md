@@ -51,6 +51,3 @@ for yr in range(1981,2020):
 ```
 
 
-## Experiments 
-Efforts are underway to develop future simulations and the available model outputs are listed here.
-{{< tabcmip6 >}}
