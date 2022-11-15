@@ -163,14 +163,17 @@
         }
         </style>
         <div class="content"><p>Multi-scale, high-resolution, and high-fidelity climate simulations</p>
+<h3 id="heading"></h3>
+<h2 id="data-information">Data information</h2>
+<h3 id="heading-1"></h3>
 <p>The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM 6 hourly (4 domains) forcing in NSCC HPC
 <img src="/images/domains_cmip6.png" alt="CMIP6 Downscling"></p>
 <ol>
 <li>All output is daily netcdf files with equal area projection at three domains
-(12.5km: Southeast Asia; 2.5km: Southern Malay Peninsula; 500m: Singapore)</li>
+(12.5 km: Southeast Asia; 2.5 km: Southern Malay Peninsula; 500 m: Singapore)</li>
 <li>Files include names with wrfout_d01_year-mon-day_00:00:00 (first running)
 and wrfout_d01_year-mon-day_03:00:00 (restart running)</li>
-<li>Every file has 8 timesteps (0,3,6,9,12,15,18,21 ; or 3,6,9,12,15,18,21,0)</li>
+<li>Every file has 8 timesteps (0, 3, 6, 9, 12, 15, 18, 21; or 3, 6, 9, 12, 15, 18, 21, 0)</li>
 <li>Due to the restart running,there are one or more files named by the same day.
 7 timesteps in the last *_00:00:00 file are the same with the first *_03:00:00 file
 We can select the first timestep in last *_00:00:00 file by xarray, then select required var and mergetime all the file
@@ -180,7 +183,9 @@ user extract the var  from wrfout and combine the vars to file in each year
 shell code (less than 8 minutes a year) is more quick than python code (over 14 minutes a year)
 for single var (Note: the xarray will output file with less size because this lib can maintain higher compression)</li>
 </ol>
-<h2 id="use-the-dataset">use the dataset</h2>
+<h3 id="heading-2"></h3>
+<h2 id="how-to-use-the-dataset-in-our-nas">How to use the dataset in our NAS</h2>
+<h3 id="heading-3"></h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">import xarray as xr
 import salem 
 import datetime
