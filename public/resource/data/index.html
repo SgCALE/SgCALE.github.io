@@ -163,9 +163,9 @@
         }
         </style>
         <div class="content"><p>Multi-scale, high-resolution, and high-fidelity climate simulations</p>
-<h2 id="heading"></h2>
+<h3 id="heading"></h3>
 <h2 id="data-information">Data information</h2>
-<h2 id="heading-1"></h2>
+<h3 id="heading-1"></h3>
 <p>The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM 6 hourly (4 domains) forcing in NSCC HPC
 <img src="/images/domains_cmip6.png" alt="CMIP6 Downscling"></p>
 <ol>
@@ -183,7 +183,9 @@ user extract the var  from wrfout and combine the vars to file in each year
 shell code (less than 8 minutes a year) is more quick than python code (over 14 minutes a year)
 for single var (Note: the xarray will output file with less size because this lib can maintain higher compression)</li>
 </ol>
+<h3 id="heading-2"></h3>
 <h2 id="how-to-use-the-dataset-in-our-nas">How to use the dataset in our NAS</h2>
+<h3 id="heading-3"></h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">import xarray as xr
 import salem 
 import datetime
