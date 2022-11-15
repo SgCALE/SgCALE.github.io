@@ -23,7 +23,7 @@ The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM (4 domains) forci
 
 ## Scripts
 
-The following python (V-3.8) scripts is used to extract the *var* from ***wrfout*** and combine the *vars* to one file in each year
+The following python (V-3.8) scripts are used to extract the *var* from ***wrfout*** and combine the *vars* to one file in each year
 
 
 ```shell
