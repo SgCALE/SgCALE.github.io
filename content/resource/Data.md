@@ -50,9 +50,3 @@ for yr in range(1981,2020):
   time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
   print(time)
 ```
-
-
-## Experiments 
-Efforts are underway to develop future simulations and the available model outputs are listed here.
-###
-{{< tabcmip6 >}}
