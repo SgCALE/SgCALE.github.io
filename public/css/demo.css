@@ -24,7 +24,7 @@ p {
 	letter-spacing: 2px; }
 a {
 	text-decoration: none;
-	color: #ef5f52;
+	color: #000000;
 	transition: 0.5s; }
 h1 {			
 	font-size: 4rem;
@@ -40,7 +40,7 @@ code {
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 }
 section h2, section h3, a {
-	color: #ef5f52;
+	color: #000000;
 }
 section a {
 	border-bottom: 1px solid;
