@@ -12,10 +12,10 @@ The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM 6 hourly (4 domai
 
 
 1. All output is daily netcdf files with equal area projection at three domains
-   (12.5km: Southeast Asia; 2.5km: Southern Malay Peninsula; 500m: Singapore)
+   (12.5 km: Southeast Asia; 2.5 km: Southern Malay Peninsula; 500 m: Singapore)
 2. Files include names with wrfout_d01_year-mon-day_00:00:00 (first running)
    and wrfout_d01_year-mon-day_03:00:00 (restart running)
-3. Every file has 8 timesteps (0,3,6,9,12,15,18,21 ; or 3,6,9,12,15,18,21,0)
+3. Every file has 8 timesteps (0, 3, 6, 9, 12, 15, 18, 21; or 3, 6, 9, 12, 15, 18, 21, 0)
 4. Due to the restart running,there are one or more files named by the same day.
    7 timesteps in the last *_00:00:00 file are the same with the first *_03:00:00 file
    We can select the first timestep in last *_00:00:00 file by xarray, then select required var and mergetime all the file
