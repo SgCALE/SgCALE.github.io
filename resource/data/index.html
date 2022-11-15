@@ -8,7 +8,7 @@ We can select the first timestep in last *_00:00:00 file by xarray, then select 
 Must mind that precpitation include two vars and those are accumulated from the start</li><li>We offer a shell code (based on cdo) and a python code (based on xarray) which help the
 user extract the var from wrfout and combine the vars to file in each year
 shell code (less than 8 minutes a year) is more quick than python code (over 14 minutes a year)
-for single var (Note: the xarray will output file with less size because this lib can maintain higher compression)</li></ol><h2 id=use-the-dataset>use the dataset</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>import xarray as xr
+for single var (Note: the xarray will output file with less size because this lib can maintain higher compression)</li></ol><h2 id=how-to-use-the-dataset-in-our-nas>How to use the dataset in our NAS</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>import xarray as xr
 </span></span><span style=display:flex><span>import salem 
 </span></span><span style=display:flex><span>import datetime
 </span></span><span style=display:flex><span><span style=color:#75715e>#Extract WRF variables from NAS; You must mount the NAS by samba in linux or windows</span>
