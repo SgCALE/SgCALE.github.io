@@ -106,10 +106,10 @@ for yr in range(1981,2020):
   time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
   print(time)
 ```
-## license
+## License
 
 All the code in this repository is [MIT](https://choosealicense.com/licenses/mit/) licensed, but we request that you please provide attribution if reusing any of our digital content (graphics, logo, copy, etc.).
 
-## about us
+## About us
 
 SgCALE is a non-profit project that uses data and science for climate action. We aim to improve the scientific understanding of climate changes in Southeast Asia with open data. Find out more at [https://SgCALE.github.io/downscaling](https://SgCALE.github.io/downscaling) or get in touch by [opening an issue](https://SgCALE.github.io/downscaling/issues/new) or [sending us an email](mailto:hexg@u.nus.edu).
