@@ -24,7 +24,7 @@ The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM 6 hourly (4 domai
    user extract the var  from wrfout and combine the vars to file in each year
    shell code (less than 8 minutes a year) is more quick than python code (over 14 minutes a year)
    for single var (Note: the xarray will output file with less size because this lib can maintain higher compression)
-## use the dataset
+## How to use the dataset in our NAS
 ```shell
 import xarray as xr
 import salem 
