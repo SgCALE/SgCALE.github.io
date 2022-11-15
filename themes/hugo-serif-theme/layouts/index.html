@@ -44,7 +44,7 @@
     <div class="row justify-content-start">
       {{ range first 6 (sort $research ".Params.weight") }}
       <div class="col-12 col-md-6 mb-2">
-        {{ .Render "summary" }}
+        {{ .Render "summaryresearch" }}
       </div>
       {{ end }}
     </div>
