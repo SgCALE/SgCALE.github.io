@@ -47,7 +47,7 @@ What&amp;rsquo;s downscaling GCMs under CMIP6 have been widely used to investiga
       
       <guid>/resource/data/</guid>
       <description>Multi-scale, high-resolution, and high-fidelity climate simulations
- Data information  The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM 6 hourly (4 domains) forcing in NSCC HPC  All output is daily netcdf files with equal area projection at three domains (12.5 km: Southeast Asia; 2.5 km: Southern Malay Peninsula; 500 m: Singapore) Files include names with wrfout_d01_year-mon-day_00:00:00 (first running) and wrfout_d01_year-mon-day_03:00:00 (restart running) Every file has 8 timesteps (0, 3, 6, 9, 12, 15, 18, 21; or 3, 6, 9, 12, 15, 18, 21, 0) Due to the restart running,there are one or more files named by the same day.</description>
+Domains The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM (4 domains) forcing in NSCC HPC, as shown below.  All output is daily netcdf files with equal area projection at three domains (12.5km: Southeast Asia; 2.5km: Southern Malay Peninsula; 500m: Singapore) Files include names with wrfout_d01_year-mon-day_00:00:00 (first running) and wrfout_d01_year-mon-day_03:00:00 (restart running) Every file has 8 timesteps (0,3,6,9,12,15,18,21 ; or 3,6,9,12,15,18,21,0) Due to the restart running,there are one or more files named by the same day.</description>
     </item>
     
     <item>

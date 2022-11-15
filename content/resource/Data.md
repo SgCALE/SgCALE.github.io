@@ -23,7 +23,8 @@ The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM (4 domains) forci
 
 ## Scripts
 
-The following python (V-3.8) scripts are used to extract the *var* from ***wrfout*** and combine the *vars* to one file in each year.
+The following python (V-3.8) scripts are used to extract the *var* from ***wrfout*** and output to file named by each year.
+It will take about 14 minutes for single var and the xarray will can maintain same compression  level with orgin wrfout files
 
 
 ```shell
@@ -51,3 +52,7 @@ for yr in range(1981,2020):
 ```
 
 
+## Experiments 
+Efforts are underway to develop future simulations and the available model outputs are listed here.
+###
+{{< tabcmip6 >}}
