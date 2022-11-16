@@ -32,8 +32,8 @@ wrfout files
 import xarray as xr #V-2022.3.0 
 import salem 
 import datetime
-#Extract WRF variables from NAS; You must mount the NAS by samba in linux or windows
-#you must donload the code to your PC and run this in a local folder 
+#Extract WRF variables from NAS; You must mount the NAS by samba in linux or
+#windows you must donload the code to your PC and run this in a local folder 
 for yr in range(1981,2020):
   #the dirwrf is mount point dir  
   #mon="%02d" % mn
