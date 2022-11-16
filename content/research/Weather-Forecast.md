@@ -6,7 +6,7 @@ draft: false
 weight: 4
 ---
 ###
-Market-oriented forecast based on AI technologies and big data
+Real-time forecast based on AI technologies and big data
 
 ## Background
 Rainfall continues to be one of the most crucial meteorological variables in many facets of our life. With the onset of global warming, the hydrological cycle is expected to escalate, which further increases the intensity and frequency of extreme rainfall events and the risk of flooding. These events have grim socio-economic impacts on ruining communities, infrastructure, agriculture and other human-environment systems. However, urban planners and policy-makers often have to base their decisions using coarse-resolution Global Climate Models (GCMs), which may have trouble capturing local- and small-scale precipitation features and extremes, especially in a small country such as Singapore. Existing high-resolution regional models are also labor-intensive and computationally heavy. Therefore, it is paramount to have accessible high-resolution and spatially coherent precipitation forecasts.
