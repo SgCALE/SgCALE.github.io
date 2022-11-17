@@ -8,7 +8,7 @@ featured: true
 Multi-scale, high-resolution, and high-fidelity climate simulations
 
 ## Domains
-The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM (4 domains) forcing in NSCC HPC, as shown below.
+The dataset is simulated using WRF4.3 by ERA5 (3 domains) and GCM (4 domains) forcing in NSCC HPC, as shown below.
 ![CMIP6 Downscling](/images/domains_cmip6.png)
 
 1. All output is daily netcdf files with equal area projection at three domains
