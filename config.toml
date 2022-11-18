@@ -41,7 +41,7 @@ title = "We use computers to combat climate change."
   [params.seo]
     meta_twitter_site = "@Xiaogang_he"
     meta_twitter_creator = "@Xiaogang_he"
-    meta_og_image = "/images/share/screenshot.png"
+    meta_og_image = "https://raw.githubusercontent.com/SgCALE/SgCALE.github.io/main/static/images/share/screenshot.png"
 
   [params.research]
     summary_truncate = 73 # How many characters to include in the summary of the research before truncating
