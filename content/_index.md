@@ -1,7 +1,7 @@
 ---
 title: 'Homepage'
 meta_title: 'SgCALE: Sigapore’s Climate ArtificiaL intelligence Engine'
-description: "Hight resolution dataset by WRF dynamic downscaling"
+description: " "
 intro_image: "images/illustrations/pointing.png"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true

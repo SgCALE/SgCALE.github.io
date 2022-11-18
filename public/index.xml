@@ -28,7 +28,7 @@
       <guid>/research/climate-downscaling/</guid>
       <description>Hybrid statistical-dynamic downscaling based on multi-model ensembles
 What we are releasing We are releasing a bias-corrected and downscaled dataset based on 14 Coupled Model Intercomparison Project 6 (CMIP6) global climate models (GCMs) and the European Centre for Medium-Range Weather Forecasts Reanalysis 5 (ERA5) dataset. The dataset is simulated by ERA5 (3 domains) and GCMs (4 domains) forcing in NSCC HPC as shown in the following figure.
-What&amp;rsquo;s downscaling GCMs under CMIP6 have been widely used to investigate climate change impacts and put forward associated adaptation and mitigation strategies.</description>
+What is downscaling GCMs under CMIP6 have been widely used to investigate climate change impacts and put forward associated adaptation and mitigation strategies.</description>
     </item>
     
     <item>
@@ -47,7 +47,7 @@ What&amp;rsquo;s downscaling GCMs under CMIP6 have been widely used to investiga
       
       <guid>/resource/data/</guid>
       <description>Multi-scale, high-resolution, and high-fidelity climate simulations
-Domains The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM (4 domains) forcing in NSCC HPC, as shown below.  All output is daily netcdf files with equal area projection at three domains (12.5km: Southeast Asia; 2.5km: Southern Malay Peninsula; 500m: Singapore) Files include names with wrfout_d01_year-mon-day_00:00:00 (first running) and wrfout_d01_year-mon-day_03:00:00 (restart running) Every file has 8 timesteps (0,3,6,9,12,15,18,21 ; or 3,6,9,12,15,18,21,0) Due to the restart running,there are one or more files named by the same day.</description>
+Domains The dataset is simulated using WRF4.3 by ERA5 (3 domains) and GCM (4 domains) forcing in NSCC HPC, as shown below.  All output is daily netcdf files with equal area projection at three domains (12.5km: Southeast Asia; 2.5km: Southern Malay Peninsula; 500m: Singapore) Files include names with wrfout_d01_year-mon-day_00:00:00 (first running) and wrfout_d01_year-mon-day_03:00:00 (restart running) Every file has 8 timesteps (0,3,6,9,12,15,18,21 ; or 3,6,9,12,15,18,21,0) Due to the restart running,there are one or more files named by the same day.</description>
     </item>
     
     <item>
