@@ -1,6 +1,6 @@
 ---
 title: 'Homepage'
-meta_title: 'SgCALE: Sigapore’s Climate ArtificiaL intelligence Engine'
+meta_title: 'SgCALE: Singapore’s Climate ArtificiaL intelligence Engine'
 description: " "
 intro_image: "images/illustrations/pointing.png"
 intro_image_absolute: true
