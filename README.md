@@ -1,11 +1,7 @@
 <div align=left>
 <img
-  src='https://github.com/longbiao1993/CMIP6/blob/main/data/figures/group.log.jpg'
-  height='150'
-/>
-   <img
   src='https://raw.githubusercontent.com/SgCALE/SgCALE.github.io/main/static/images/logo/prjlogo-mobile.png'
-  height='140'
+  height='150'
 />
 </div>
 
