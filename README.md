@@ -4,7 +4,7 @@
   height='150'
 />
    <img
-  src='https://github.com/SgCALE/SgCALE.github.io/blob/main/group.log2.jpg'
+  src='https://raw.githubusercontent.com/SgCALE/SgCALE.github.io/main/static/images/logo/prjlogo-mobile.png'
   height='140'
 />
 </div>
