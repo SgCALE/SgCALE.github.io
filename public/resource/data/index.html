@@ -22,7 +22,7 @@
     
   
   
-  <link rel="stylesheet" href="/css/style.min.7424c903a3f85431df3c618a6692b6afdd62ddb8ed717e97d062c263881a5749.css">
+  <link rel="stylesheet" href="/css/style.min.e3cdd185039a7fd6c284b38776b41b6090a1e53b76b7bd936fb3139f707412b2.css">
   
 
   
@@ -181,28 +181,28 @@ Must mind that precpitation include two vars and those are accumulated from the 
 <p>The following python (V-3.8) scripts are used to extract the <em>var</em> from <em><strong>wrfout</strong></em> and output to file named by each year.
 It will take about 14 minutes for single var in every year and the xarray will can maintain same compression  level with original
 wrfout files</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>import xarray as xr <span style="color:#75715e">#V-2022.3.0 </span>
-</span></span><span style="display:flex;"><span>import salem 
-</span></span><span style="display:flex;"><span>import datetime
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#Extract WRF variables from NAS; You must mount the NAS by samba in linux or</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#windows you must donload the code to your PC and run this in a local folder </span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> yr in range<span style="color:#f92672">(</span>1981,2020<span style="color:#f92672">)</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#the dirwrf is mount point dir  </span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#mon=&#34;%02d&#34; % mn</span>
-</span></span><span style="display:flex;"><span>  print<span style="color:#f92672">(</span>yr<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>  dirwrf<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/mnt/y/WRF_3domain_fERA5/d02/&#39;</span>+str<span style="color:#f92672">(</span>yr<span style="color:#f92672">)</span>+<span style="color:#e6db74">&#39;/&#39;</span>
-</span></span><span style="display:flex;"><span>  ds<span style="color:#f92672">=</span>xr.open_mfdataset<span style="color:#f92672">(</span>dirwrf+<span style="color:#e6db74">&#39;wrfout_d02_*&#39;</span>,concat_dim<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Time&#39;</span>,combine<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;nested&#39;</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#odir is the local dir for saving out data,&#39;./&#39; means present folder</span>
-</span></span><span style="display:flex;"><span>  odir<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;./&#39;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#RAINNC is the var name, you can change this to your requirement;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#the whole output vars is in wrfout.vars_list.txt</span>
-</span></span><span style="display:flex;"><span>  ds.RAINNC.to_netcdf<span style="color:#f92672">(</span>odir+<span style="color:#e6db74">&#39;RAINNC.&#39;</span>+str<span style="color:#f92672">(</span>yr<span style="color:#f92672">)</span>+<span style="color:#e6db74">&#39;.nc&#39;</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#you can also use salem.deacc to de-accumulate the variables(RAINC RAINNC)</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#df=ds.RAINNC.salem.deacc(as_rate=False)</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#df.to_netcdf(odir+&#39;RAINNC.&#39;+str(yr)+&#39;.nc&#39;)</span>
-</span></span><span style="display:flex;"><span>  time <span style="color:#f92672">=</span> datetime.datetime.now<span style="color:#f92672">()</span>.strftime<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;%Y-%m-%d %H:%M:%S&#39;</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>  print<span style="color:#f92672">(</span>time<span style="color:#f92672">)</span>
-</span></span></code></pre></div><h2 id="experiments">Experiments</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">import xarray as xr <span style="color:#75715e">#V-2022.3.0</span> 
+import salem 
+import datetime
+<span style="color:#75715e">#Extract WRF variables from NAS; You must mount the NAS by samba in linux or</span>
+<span style="color:#75715e">#windows you must donload the code to your PC and run this in a local folder</span> 
+<span style="color:#66d9ef">for</span> yr in range<span style="color:#f92672">(</span>1981,2020<span style="color:#f92672">)</span>:
+  <span style="color:#75715e">#the dirwrf is mount point dir</span>  
+  <span style="color:#75715e">#mon=&#34;%02d&#34; % mn</span>
+  print<span style="color:#f92672">(</span>yr<span style="color:#f92672">)</span>
+  dirwrf<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/mnt/y/WRF_3domain_fERA5/d02/&#39;</span>+str<span style="color:#f92672">(</span>yr<span style="color:#f92672">)</span>+<span style="color:#e6db74">&#39;/&#39;</span>
+  ds<span style="color:#f92672">=</span>xr.open_mfdataset<span style="color:#f92672">(</span>dirwrf+<span style="color:#e6db74">&#39;wrfout_d02_*&#39;</span>,concat_dim<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Time&#39;</span>,combine<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;nested&#39;</span><span style="color:#f92672">)</span>
+  <span style="color:#75715e">#odir is the local dir for saving out data,&#39;./&#39; means present folder</span>
+  odir<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;./&#39;</span>
+  <span style="color:#75715e">#RAINNC is the var name, you can change this to your requirement;</span>
+  <span style="color:#75715e">#the whole output vars is in wrfout.vars_list.txt</span>
+  ds.RAINNC.to_netcdf<span style="color:#f92672">(</span>odir+<span style="color:#e6db74">&#39;RAINNC.&#39;</span>+str<span style="color:#f92672">(</span>yr<span style="color:#f92672">)</span>+<span style="color:#e6db74">&#39;.nc&#39;</span><span style="color:#f92672">)</span>
+  <span style="color:#75715e">#you can also use salem.deacc to de-accumulate the variables(RAINC RAINNC)</span>
+  <span style="color:#75715e">#df=ds.RAINNC.salem.deacc(as_rate=False)</span>
+  <span style="color:#75715e">#df.to_netcdf(odir+&#39;RAINNC.&#39;+str(yr)+&#39;.nc&#39;)</span>
+  time <span style="color:#f92672">=</span> datetime.datetime.now<span style="color:#f92672">()</span>.strftime<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;%Y-%m-%d %H:%M:%S&#39;</span><span style="color:#f92672">)</span>
+  print<span style="color:#f92672">(</span>time<span style="color:#f92672">)</span>
+</code></pre></div><h2 id="experiments">Experiments</h2>
 <p>Efforts are underway to develop future simulations and key model outputs are listed here.</p>
 <!DOCTYPE html>
 <html lang="en">
@@ -343,13 +343,13 @@ wrfout files</p>
 
   
 
-<script type="text/javascript" src="/js/services.min.9107b65a7df0422d8a274963e6b560062a6cdf62185570cfd584b43defa67279.js"></script>
+<script type="text/javascript" src="/js/services.min.96db5a4d9a7ea2d1759fd6847940367b5207c4ef5686df932179e04aefccdf37.js"></script>
 
 
   
     
   
-  <script type="text/javascript" src="/js/scripts.min.8504133605a277da18f0d58cfd2e90d154962f4a961543a6e2f0a459a2d05462.js"></script>
+  <script type="text/javascript" src="/js/scripts.min.bf1e1f7ae8e03db5f012356e825843facdff51c0a559cb0d27fe2bbe1db405c2.js"></script>
 
   
 

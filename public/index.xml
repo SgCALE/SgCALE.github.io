@@ -6,7 +6,11 @@
     <description>Recent content in Homepage on We use computers to combat climate change.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Dec 2018 13:45:06 +1000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Feb 2018 17:01:34 +0700</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Xiaogang He</title>
       <link>/team/xiaoganghe/</link>
@@ -43,7 +47,7 @@ What is downscaling GCMs under CMIP6 have been widely used to investigate climat
       
       <guid>/resource/data/</guid>
       <description>Multi-scale, high-resolution, and high-fidelity climate simulations
-Domains The dataset is simulated using WRF4.3 by ERA5 (3 domains) and GCM (4 domains) forcing in NSCC HPC, as shown below. All output is daily netcdf files with equal area projection at three domains (12.5km: Southeast Asia; 2.5km: Southern Malay Peninsula; 500m: Singapore) Files include names with wrfout_d01_year-mon-day_00:00:00 (first running) and wrfout_d01_year-mon-day_03:00:00 (restart running) Every file has 8 timesteps (0,3,6,9,12,15,18,21 ; or 3,6,9,12,15,18,21,0) Due to the restart running,there are one or more files named by the same day.</description>
+Domains The dataset is simulated using WRF4.3 by ERA5 (3 domains) and GCM (4 domains) forcing in NSCC HPC, as shown below.  All output is daily netcdf files with equal area projection at three domains (12.5km: Southeast Asia; 2.5km: Southern Malay Peninsula; 500m: Singapore) Files include names with wrfout_d01_year-mon-day_00:00:00 (first running) and wrfout_d01_year-mon-day_03:00:00 (restart running) Every file has 8 timesteps (0,3,6,9,12,15,18,21 ; or 3,6,9,12,15,18,21,0) Due to the restart running,there are one or more files named by the same day.</description>
     </item>
     
     <item>
@@ -198,7 +202,8 @@ Background Rainfall continues to be one of the most crucial meteorological varia
       <pubDate>Thu, 22 Feb 2018 17:01:34 +0700</pubDate>
       
       <guid>/about/</guid>
-      <description>We are a group of AI enthusiasts with a diverse background in climate science, hydrology, Earth system modeling, and civil and environmental engineering. Our mission is to build Singapore’s Climate ArtificiaL intelligence Engine (SgCALE) to predict highly-localized urban climate extremes e.g., floods, droughts, heat waves) harnessing machine learning.</description>
+      <description>We are a group of AI enthusiasts with a diverse background in climate science, hydrology, Earth system modeling, and civil and environmental engineering. Our mission is to build Singapore’s Climate ArtificiaL intelligence Engine (SgCALE) to predict highly-localized urban climate extremes e.g., floods, droughts, heat waves) harnessing machine learning.
+  </description>
     </item>
     
     <item>
