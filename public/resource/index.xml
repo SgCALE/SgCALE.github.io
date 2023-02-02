@@ -5,11 +5,7 @@
     <link>/resource/</link>
     <description>Recent content in Resources on We use computers to combat climate change.</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data</title>
       <link>/resource/data/</link>
@@ -17,7 +13,7 @@
       
       <guid>/resource/data/</guid>
       <description>Multi-scale, high-resolution, and high-fidelity climate simulations
-Domains The dataset is simulated using WRF4.3 by ERA5 (3 domains) and GCM (4 domains) forcing in NSCC HPC, as shown below.  All output is daily netcdf files with equal area projection at three domains (12.5km: Southeast Asia; 2.5km: Southern Malay Peninsula; 500m: Singapore) Files include names with wrfout_d01_year-mon-day_00:00:00 (first running) and wrfout_d01_year-mon-day_03:00:00 (restart running) Every file has 8 timesteps (0,3,6,9,12,15,18,21 ; or 3,6,9,12,15,18,21,0) Due to the restart running,there are one or more files named by the same day.</description>
+Domains The dataset is simulated using WRF4.3 by ERA5 (3 domains) and GCM (4 domains) forcing in NSCC HPC, as shown below. All output is daily netcdf files with equal area projection at three domains (12.5km: Southeast Asia; 2.5km: Southern Malay Peninsula; 500m: Singapore) Files include names with wrfout_d01_year-mon-day_00:00:00 (first running) and wrfout_d01_year-mon-day_03:00:00 (restart running) Every file has 8 timesteps (0,3,6,9,12,15,18,21 ; or 3,6,9,12,15,18,21,0) Due to the restart running,there are one or more files named by the same day.</description>
     </item>
     
     <item>
