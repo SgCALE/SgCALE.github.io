@@ -1,82 +1,146 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   <url>
     <loc>/team/xiaoganghe/</loc>
     <lastmod>2018-11-19T10:47:58+10:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/research/climate-downscaling/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/mainpage/climate-intelligence/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/resource/data/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/team/wenpeng/</loc>
     <lastmod>2018-12-20T13:44:30+10:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/research/climate-emulator/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/mainpage/climate-science/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/resource/tools/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/team/shuping/</loc>
     <lastmod>2018-12-20T13:44:30+10:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/mainpage/climate-service/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/research/complex-climate-networks/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/resource/tutorials/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/team/peng/</loc>
     <lastmod>2018-12-20T14:44:30+10:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/team/biao/</loc>
     <lastmod>2018-12-20T13:44:23+10:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/mainpage/climate-platform/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/research/weather-forecast/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/team/zhanwei/</loc>
     <lastmod>2018-12-20T13:44:55+10:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/research/compound-flooding/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/team/huiming/</loc>
     <lastmod>2018-12-20T13:45:06+10:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/research/seamless-drought-prediction/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/team/zhixiao/</loc>
     <lastmod>2018-12-20T13:44:55+10:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/team/jack/</loc>
     <lastmod>2018-12-20T13:45:06+10:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2018-12-20T14:44:30+10:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/team/</loc>
     <lastmod>2018-12-20T14:44:30+10:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/about/</loc>
     <lastmod>2018-02-22T17:01:34+07:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/contact/</loc>
     <lastmod>2018-02-22T17:01:34+07:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-02-22T17:01:34+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/mainpage/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/404/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/research/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/resource/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
   </url>
+  
 </urlset>
