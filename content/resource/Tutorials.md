@@ -3,7 +3,7 @@ title: "Tutorials"
 date: 2022-11-09T18:02
 featured: true
 draft: false
-weight: 3
+weight: 4
 ---
 Jupyter Book for Python Climate Visuals
 
