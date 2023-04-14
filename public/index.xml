@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>Apps</title>
+      <link>/resource/apps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resource/apps/</guid>
+      <description>contents comming soon</description>
+    </item>
+    
+    <item>
       <title>Climate Downscaling</title>
       <link>/research/climate-downscaling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -34,16 +43,6 @@ What is downscaling GCMs under CMIP6 have been widely used to investigate climat
       
       <guid>/mainpage/climate-intelligence/</guid>
       <description>High-precision climatic datasets and analytics in Southeast Asia</description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>/resource/data/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/resource/data/</guid>
-      <description>Multi-scale, high-resolution, and high-fidelity climate simulations
-Domains The dataset is simulated using WRF4.3 by ERA5 (3 domains) and GCM (4 domains) forcing in NSCC HPC, as shown below.  All output is daily netcdf files with equal area projection at three domains (12.5km: Southeast Asia; 2.5km: Southern Malay Peninsula; 500m: Singapore) Files include names with wrfout_d01_year-mon-day_00:00:00 (first running) and wrfout_d01_year-mon-day_03:00:00 (restart running) Every file has 8 timesteps (0,3,6,9,12,15,18,21 ; or 3,6,9,12,15,18,21,0) Due to the restart running,there are one or more files named by the same day.</description>
     </item>
     
     <item>
@@ -74,12 +73,13 @@ Domains The dataset is simulated using WRF4.3 by ERA5 (3 domains) and GCM (4 dom
     </item>
     
     <item>
-      <title>Tools</title>
-      <link>/resource/tools/</link>
+      <title>Data</title>
+      <link>/resource/data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/resource/tools/</guid>
-      <description>contents comming soon</description>
+      <guid>/resource/data/</guid>
+      <description>Multi-scale, high-resolution, and high-fidelity climate simulations
+Domains The dataset is simulated using WRF4.3 by ERA5 (3 domains) and GCM (4 domains) forcing in NSCC HPC, as shown below.  All output is daily netcdf files with equal area projection at three domains (12.5km: Southeast Asia; 2.5km: Southern Malay Peninsula; 500m: Singapore) Files include names with wrfout_d01_year-mon-day_00:00:00 (first running) and wrfout_d01_year-mon-day_03:00:00 (restart running) Every file has 8 timesteps (0,3,6,9,12,15,18,21 ; or 3,6,9,12,15,18,21,0) Due to the restart running,there are one or more files named by the same day.</description>
     </item>
     
     <item>
@@ -110,13 +110,12 @@ Domains The dataset is simulated using WRF4.3 by ERA5 (3 domains) and GCM (4 dom
     </item>
     
     <item>
-      <title>Tutorials</title>
-      <link>/resource/tutorials/</link>
+      <title>Tools</title>
+      <link>/resource/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/resource/tutorials/</guid>
-      <description>Jupyter Book for Python Climate Visuals
-https://github.com/XiaogangHe/python-climate-visuals</description>
+      <guid>/resource/tools/</guid>
+      <description>contents comming soon</description>
     </item>
     
     <item>
@@ -144,6 +143,16 @@ https://github.com/XiaogangHe/python-climate-visuals</description>
       
       <guid>/mainpage/climate-platform/</guid>
       <description>Impact-relevant information and decision support platform</description>
+    </item>
+    
+    <item>
+      <title>Tutorials</title>
+      <link>/resource/tutorials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resource/tutorials/</guid>
+      <description>Jupyter Book for Python Climate Visuals
+https://github.com/XiaogangHe/python-climate-visuals</description>
     </item>
     
     <item>
@@ -176,10 +185,10 @@ Background Rainfall continues to be one of the most crucial meteorological varia
     
     <item>
       <title>Huimin Wang</title>
-      <link>/team/huiming/</link>
+      <link>/team/huimin/</link>
       <pubDate>Thu, 20 Dec 2018 13:45:06 +1000</pubDate>
       
-      <guid>/team/huiming/</guid>
+      <guid>/team/huimin/</guid>
       <description></description>
     </item>
     
@@ -207,6 +216,15 @@ Background Rainfall continues to be one of the most crucial meteorological varia
       <pubDate>Thu, 20 Dec 2018 13:45:06 +1000</pubDate>
       
       <guid>/team/jack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lim Jian Ye</title>
+      <link>/team/lim-jian-ye/</link>
+      <pubDate>Thu, 20 Dec 2018 13:44:55 +1000</pubDate>
+      
+      <guid>/team/lim-jian-ye/</guid>
       <description></description>
     </item>
     

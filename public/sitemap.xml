@@ -5,11 +5,11 @@
     <loc>/team/xiaoganghe/</loc>
     <lastmod>2018-11-19T10:47:58+10:00</lastmod>
   </url><url>
+    <loc>/resource/apps/</loc>
+  </url><url>
     <loc>/research/climate-downscaling/</loc>
   </url><url>
     <loc>/mainpage/climate-intelligence/</loc>
-  </url><url>
-    <loc>/resource/data/</loc>
   </url><url>
     <loc>/team/wenpeng/</loc>
     <lastmod>2018-12-20T13:44:30+10:00</lastmod>
@@ -18,7 +18,7 @@
   </url><url>
     <loc>/mainpage/climate-science/</loc>
   </url><url>
-    <loc>/resource/tools/</loc>
+    <loc>/resource/data/</loc>
   </url><url>
     <loc>/team/shuping/</loc>
     <lastmod>2018-12-20T13:44:30+10:00</lastmod>
@@ -27,7 +27,7 @@
   </url><url>
     <loc>/research/complex-climate-networks/</loc>
   </url><url>
-    <loc>/resource/tutorials/</loc>
+    <loc>/resource/tools/</loc>
   </url><url>
     <loc>/team/peng/</loc>
     <lastmod>2018-12-20T14:44:30+10:00</lastmod>
@@ -37,6 +37,8 @@
   </url><url>
     <loc>/mainpage/climate-platform/</loc>
   </url><url>
+    <loc>/resource/tutorials/</loc>
+  </url><url>
     <loc>/research/weather-forecast/</loc>
   </url><url>
     <loc>/team/zhanwei/</loc>
@@ -44,7 +46,7 @@
   </url><url>
     <loc>/research/compound-flooding/</loc>
   </url><url>
-    <loc>/team/huiming/</loc>
+    <loc>/team/huimin/</loc>
     <lastmod>2018-12-20T13:45:06+10:00</lastmod>
   </url><url>
     <loc>/research/seamless-drought-prediction/</loc>
@@ -54,6 +56,9 @@
   </url><url>
     <loc>/team/jack/</loc>
     <lastmod>2018-12-20T13:45:06+10:00</lastmod>
+  </url><url>
+    <loc>/team/lim-jian-ye/</loc>
+    <lastmod>2018-12-20T13:44:55+10:00</lastmod>
   </url><url>
     <loc>/</loc>
     <lastmod>2018-12-20T14:44:30+10:00</lastmod>
