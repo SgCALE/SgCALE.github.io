@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Yanyan Chen - We use computers to combat climate change.</title>
+  <title>Weather Forecast - We use computers to combat climate change.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="/favicon-32x32.svg">
   
@@ -29,10 +29,10 @@
 
   
     
-    <meta property="og:title" content="Yanyan Chen"/>
+    <meta property="og:title" content="Weather Forecast"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="/team/yanyanchen/"/>
-    <meta property="og:image" content="/images/team/yanyan_chen.jfif"/>
+    <meta property="og:url" content="/research/weather-forecast/"/>
+    <meta property="og:image" content="https://raw.githubusercontent.com/SgCALE/SgCALE.github.io/main/static/images/share/screenshot.png"/>
     
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="@Xiaogang_he"/>
@@ -41,7 +41,7 @@
 
 </head>
 
-<body class='page page-default-single'>
+<body class='page page-research-single'>
   <div id="main-menu-mobile" class="main-menu-mobile">
   <ul>
     
@@ -144,23 +144,17 @@
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
   <div class="row justify-content-start">
     <div class="col-12 col-md-8">
-      <h1 class="title">Yanyan Chen</h1>
-      <style>
-        table, td, th {  
-      border: 1px solid rgb(0, 0, 0);
-      text-align: left;
-      }
-      
-      table {
-      border-collapse: collapse;
-      width: 100%;
-      }
-      
-      th, td {
-      padding: 15px;
-      }
-      </style>
-      <div class="content"></div>
+      <div class="service service-single">
+        <h1 class="title">Weather Forecast</h1>
+        <div class="content"><h3 id="heading"></h3>
+<p>Real-time weather forecast based on AI technologies and big data</p>
+<h2 id="background">Background</h2>
+<p>Rainfall continues to be one of the most crucial meteorological variables in many facets of our life. With the onset of global warming, the hydrological cycle is expected to escalate, which further increases the intensity and frequency of extreme rainfall events and the risk of flooding. These events have grim socio-economic impacts on ruining communities, infrastructure, agriculture and other human-environment systems. However, urban planners and policy-makers often have to base their decisions using coarse-resolution Global Climate Models (GCMs), which may have trouble capturing local- and small-scale precipitation features and extremes, especially in a small country such as Singapore. Existing high-resolution regional models are also labor-intensive and computationally heavy. Therefore, it is paramount to have accessible high-resolution and spatially coherent precipitation forecasts.</p>
+<h2 id="deep-learning">Deep Learning</h2>
+<p>In this work, we make use of both the latest Global Ensemble Forecast System version 12 (GEFSv12) reanalysis and the Weather Research &amp; Forecasting Model (WRF) forced by European Centre for Medium-Range Weather Forecasts Reanalysis 5 (ERA5) dataset as ground truths to correct and downscale 6 hourly total precipitation forecasts using 13 GEFSv12 reforecast meteorological fields as input. The spatial resolution of both GEFSv12 reanalysis and reforecast (black grids) is 0.25°, and spatial resolution of WRF (blue/red grids) is 0.0225°. We hypothesized that our multi-task learning framework is able to pick up important spatial features from the WRF dataset, while adjusting the precipitation magnitude based on GEFSv12 reanalysis in order to produce bias-corrected and high-resolution 6 hourly total precipitation forecasts. We exploit and modify the generator model architecture from the Super-Resolution Generative Adversarial Network (SRGAN) for multi-task learning of two specific and complementary tasks. The first task is the usual bias correcting and downscaling of 6 hourly total precipitation based on the high-resolution WRF dataset, and the second task is framed as a classification problem to bias correct 6 hourly total precipitation categories based on the GEFSv12 reanalysis. To our best knowledge, this is the first time two separate and distinct ground truths were harnessed to simultaneously correct and downscale total precipitation via a multi-task learning approach. The detailed model architecture is shown below.</p>
+<p><img src="/images/research_weatherforcast.png" alt="wetherforcast"></p>
+</div>
+      </div>
     </div>
   </div>
 </div>
@@ -231,7 +225,14 @@
   
 
   
+
+
+
+
   
+
+<script type="text/javascript" src="/js/services.min.052ec1d7bcff8bba2b50359ebe62c0e6d0f530b3bd5cf723d5ccc5e8f22bd123.js"></script>
+
 
   
     
