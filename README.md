@@ -1,111 +1,142 @@
-<div align=left>
-<img
-  src='https://raw.githubusercontent.com/SgCALE/SgCALE.github.io/main/static/images/logo/prjlogo-mobile.png'
-  height='150'
-/>
-</div>
+<p align="center">
+  <a href="https://sgcale.github.io">
+    <img src="./static/images/logo/prjlogo-mobile.png" height="150" alt="SgCALE Logo">
+  </a>
+</p>
 
+<p align="center">
+  <a href="https://github.com/SgCALE/SgCALE.github.io"><img src="https://img.shields.io/github/contributors/SgCALE/SgCALE.github.io.svg" alt="GitHub Contributors"></a>
+  <a href="https://github.com/SgCALE/SgCALE.github.io"><img src="https://img.shields.io/github/issues/SgCALE/SgCALE.github.io.svg" alt="GitHub Issues"></a>
+  <a href="https://github.com/SgCALE/SgCALE.github.io"><img src="https://github.com/SgCALE/SgCALE.github.io/actions/workflows/gh-pages.yml/badge.svg" alt="Build Status"></a>
+  <a href="https://github.com/SgCALE/SgCALE.github.io"><img src="https://img.shields.io/github/license/SgCALE/SgCALE.github.io.svg" alt="License"></a>
+</p>
 
+## Table of Contents
+- [About Us](#about-us)
+- [Overview](#overview)
+- [Global Climate Models (GCMs)](#global-climate-models-gcms)
+- [Downscaling](#downscaling)
+- [Hybrid Statistical-dynamical Downscaling](#hybrid-statistical-dynamical-downscaling)
+- [Resulting Dataset](#resulting-dataset)
+- [Extracting Data](#extracting-data)
+- [Contact Us](#contact-us)
+- [Disclaimer](#disclaimer)
 
-# 
+## About Us
 
-## Climate models
-Global climate models (GCMs) under Coupled Model Intercomparison Project 6 (CMIP6) 
-have been widely used to investigate climate change impacts and put forward associated adaptation 
-and mitigation strategies. However, the relatively coarse spatial resolutions (usually 100~300km) 
-preclude their direct applications in regional scales, where the analysis 
-(e.g., hydrological model simulation) is applied. To bridge this gap, a typical approach is to 
-‘refine’ the information from GCMs through regional climate downscaling experiments, 
-which can be conducted statistically, dynamically, or a combination thereof. 
-Statistical downscaling establishes relationships between large-scale climate indicators 
-and small-scale climate variables in the reference (historical) period. Subsequently, 
-these relationships are kept unchanged in the future and used to predict the future variables. 
-On the other hand, dynamical downscaling operates based on the physical processes and 
-the associated interactions in the climate systems and thus can produce a full set of 
-regional climate simulations (e.g., temperature and precipitation fields) that are 
-dynamically consistent. However, traditional dynamical downscaling contains significant biases 
-that are transferred from GCMs and may be enhanced during the process of downscaling, thus degrading the downscaled results. 
-One approach to remove these biases is the hybrid statistical-dynamical downscaling, where GCMs are firstly bias corrected, 
-and subsequently used as lower and lateral boundary conditions to drive the regional climate models (RCMs).
+SgCALE is a non-profit project that uses data and science for climate action. We aim to improve the scientific understanding of climate changes in Southeast Asia with open data. Find out more about us [here](https://sgcale.github.io/team/).
 
+## Overview
 
+Welcome to SgCALE (**S**in**g**apore’s **C**limate **A**rtificia**L** intelligence **E**ngine) Repository. This repository discusses the current limitations of our Global Climate Models (GCMs) and our unique approach towards climate downscaling.
 
-## Hybrid statistical-dynamical downscaling
-In this work, we apply a hybrid statistical-dynamical downscaling, following the approach of Xu et al., 2021. 
-We establish a bias-corrected and downscaled dataset based on 14 CMIP6 GCMs and the European Centre for 
-Medium-Range Weather Forecasts Reanalysis 5 (ERA5) dataset. The bias-corrected dataset is adjusted to resemble 
-ERA5-based mean climate and interannual variance, and with a non-linear trend from the ensemble mean of the 
-14 CMIP6 models. The dataset spans a historical period of 1979–2014 and future scenarios (SSP585) of 2015–2100,
- with a temporal scale of six-hour.
+Our objectives is to:
 
-The main contributions of this dataset are twofold, 1) we provide the open-source and high-resolution 
-(12.5km: southeast Asia; 2.5km: Southern Malay Peninsula; 500m: Singapore, as shown in Fig. 1) datasets, 
-including precipitation, wind, temperature, radiation, etc; 2) through our experiment, this bias-corrected and downscaled 
-dataset is of better quality than the existing dynamical scaling work (e.g., CORDEX) in southeast Asia in terms
- of its ability to reproduce regional climate extremes, spatial patterns, etc. This dataset will be 
- useful for policy-makers and researchers to make the pathways for resilient planning to reduce climate change impacts.
+- Refine GCMs to a regional scale, enhancing their accuracy and applicability.
+- Provide resources, methodologies, and scripts to advance our understanding of climate changes.
 
+Whether you're a researcher, enthusiast, or just curious about climate science, this repository offers valuable insights and tools.
 
-[![GitHub][github-badge]][github]
-[![Build Status]][actions]
-![MIT License][]
+## Global Climate Models (GCMs)
 
-[github]: https://github.com/carbonplan/carbonplan.org
-[github-badge]: https://badgen.net/badge/-/github?icon=github&label
-[build status]: https://github.com/carbonplan/carbonplan.org/actions/workflows/main.yml/badge.svg
-[actions]: https://github.com/carbonplan/carbonplan.org/actions/workflows/main.yml
-[mit license]: https://badgen.net/badge/license/MIT/blue
+### What are GCMs?
 
-## The details of this dataset are given below.
-The dataset is simulated by WRF4.3 by ERA5 (3 domains) and GCM (4 domains) forcing in NSCC HPC, as shown below.
-<div align=center>
-<img
-  src='https://github.com/longbiao1993/CMIP6/blob/main/data/figures/domains_cmip6.png'
-  height='400'
-/>
-</div>
+GCMs are numerical models that represent the major climate systems in the atmosphere, ocean, cryosphere, and land surface. They are critical tools for scientists to understand past, present, and future climates. GCMs under Coupled Model Intercomparison Project 6 (CMIP6) have been widely used to investigate potential climate change impacts and develop strategies to address them.
 
-1. All output is daily netcdf files with equal area projection at three domains
-   (**12.5km**: Southeast Asia; **2.5km**: Southern Malay Peninsula; **500m**: Singapore)
-2. Files include names with ***wrfout_d01_year-mon-day_00:00:00*** (first running)
-   and ***wrfout_d01_year-mon-day_03:00:00*** (restart running)
-3. Every file has 8 timesteps (0,3,6,9,12,15,18,21 ; or 3,6,9,12,15,18,21,0)
-4. Due to the restart running,there are one or more files named by the same day.
-   7 timesteps in the last *_00:00:00 file are the same with the first *_03:00:00 file
-   We can select the first timestep in last *_00:00:00 file by xarray, then select required var and mergetime all the file
-   Must mind that precpitation include two vars and those are accumulated from the start
+### Data Resolution
 
-## Scripts
+GCMs contains relatively coarse spatial resolution, often in the range of 100~300 km. While this is sufficient for global analysis, it can overlook significant regional and local variations, especially in areas with complex terrains or coastlines. For instance, a GCM might not accurately capture the microclimates found in mountainous regions or small islands, such as Singapore.
 
-The following python (V-3.8) scripts are used to extract the *var* from ***wrfout*** and combine the *vars* to one file in each year.
+## Downscaling
 
-```shell
-import xarray as xr #V-2022.3.0 
+To make GCM outputs relevant at local to regional scales, downscaling is employed. Downscaling is the process of taking coarse-resolution GCM outputs and refining them to provide high-resolution climate projections.
+
+### Statistical Downscaling
+
+This method involves establishing statistical relationships between the large-scale atmospheric data from GCMs and local-scale climate computations. Once these relationships are determined based on historical data, they can be used for future projections to predict local future climates.
+
+### Dynamical Downscaling
+
+This method uses the outputs from GCMs as boundary conditions for regional climate models (RCMs) that have a much higher spatial resolution. RCMs, like GCMs, are based on the physical equations governing atmospheric flow but focus on a specific region. The advantage is that they can capture regional and local processes more accurately. However, they also inherit biases from the parent GCM and might introduce their own biases.
+
+## Hybrid Statistical-dynamical Downscaling
+
+Drawing inspiration from the methods of [Xu et al. (2021)](https://pubmed.ncbi.nlm.nih.gov/34737356/), we've integrated both statistical and dynamical downscaling techniques to enhance the precision of our resulting dataset.
+
+### Methodology
+
+1. Establish a bias-corrected and downscaled dataset based on 14 CMIP6 GCMs and the European Centre for Medium-Range Weather Forecasts Reanalysis 5 (ERA5) dataset.
+
+2. Adjusted the bias-corrected dataset to align with climate patterns of ERA5 and integrated non-linear trend observed from the 14 CMIP6 models.
+
+3. Resulting dataset spans a historical period of 1979–2014 and future scenarios (SSP585) of 2015–2100, with a temporal scale of six-hour.
+
+### Key Features
+
+<p align="center">
+  <img src="./static/images/rdomains.png" alt="Downscaled Data" height="400">
+</p>
+
+High Data Resolutions
+
+- Southeast Asia at 12.5km resolution
+- Southern Malay Peninsula at 2.5km resolution
+- Singapore at 500m resolution
+
+Enhanced Accuracy
+
+- Better ability to reproduce regional climate extremes and spatial patterns than existing dynamical scaling work (e.g., CORDEX) in Southeast Asia.
+
+## Resulting Dataset
+
+<p align=center>
+  <img src='./static/images/domains_cmip6.png' height='400'/>
+</p>
+
+Features of the resulting open-source and high-resolution dataset:
+
+- Output files are in daily netCDF format with equal area projection at three domains (12.5km: Southeast Asia; 2.5km: Southern Malay Peninsula; 500m: Singapore).
+
+- Variables include temperature, precipitation, wind speed, relative humidity, and solar radiation.
+
+- Each daily file has 8 timesteps (0,3,6,9,12,15,18,21 ; or 3,6,9,12,15,18,21,0).
+  - Due to occasional restarts, there are one or more files named by the same day.
+  - 7 timesteps in the last *_00:00:00 file are the same with the first*_03:00:00 file.
+  - We can merge the first timestep of our target \*_00:00:00 file with the first 7 timesteps of the \*_03:00:00 file using Xarray.
+
+## Extracting Data
+
+The following Python (v3.8) script can be used to extract the resulting dataset from the Network Attached Storage (NAS) to your local machine.
+
+```python
+import xarray as xr #v2022.3.0 
 import salem 
 import datetime
-#Extract WRF variables from NAS; You must mount the NAS by samba in linux or windows
-#you must donload the code to your PC and run this in a local folder 
+
+# Extract WRF variables from NAS; ensure the NAS is mounted.
+# Download the code to your local machine and run in a local directory.
 for yr in range(1981,2020):
-  #the dirwrf is mount point dir  
-  #mon="%02d" % mn
   print(yr)
   dirwrf='/mnt/y/WRF_3domain_fERA5/d02/'+str(yr)+'/'
   ds=xr.open_mfdataset(dirwrf+'wrfout_d02_*',concat_dim='Time',combine='nested')
-  #odir is the local dir for saving out data,'./' means present folder
+  # odir is the local dir for saving out data, './' means present folder
   odir='./'
-  #RAINNC is the var name, you can change this to your requirement;
-  #the whole output vars is in wrfout.vars_list.txt
+  # RAINNC is the var name, you can change this to your requirement;
+  # the whole output vars is in wrfout.vars_list.txt
   ds.RAINNC.to_netcdf(odir+'RAINNC.'+str(yr)+'.nc')
-  #you can also use salem.deacc to de-accumulate the variables(RAINC RAINNC)
-  #df=ds.RAINNC.salem.deacc(as_rate=False)
-  #df.to_netcdf(odir+'RAINNC.'+str(yr)+'.nc')
+  # you can also use salem.deacc to de-accumulate the variables(RAINC RAINNC)
+  # df=ds.RAINNC.salem.deacc(as_rate=False)
+  # df.to_netcdf(odir+'RAINNC.'+str(yr)+'.nc')
   time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
   print(time)
 ```
-## License
 
-All the code in this repository is [MIT](https://choosealicense.com/licenses/mit/) licensed, but we request that you please provide attribution if reusing any of our digital content (graphics, logo, copy, etc.).
+## Contact Us
 
-## About us
+If you have any questions, comments, or suggestions that aren't suitable for public discussions in the Issues section, please feel free to reach out to [Xiaogang He](mailto:hexg@u.nus.edu).
 
-SgCALE is a non-profit project that uses data and science for climate action. We aim to improve the scientific understanding of climate changes in Southeast Asia with open data. Find out more at [https://SgCALE.github.io/downscaling](https://SgCALE.github.io/downscaling) or get in touch by [opening an issue](https://SgCALE.github.io/downscaling/issues/new) or [sending us an email](mailto:hexg@u.nus.edu).
+Please use the GitHub Issues for public discussions related to bugs, enhancements, or other project-related discussions.
+
+## Disclaimer
+
+The information provided in this repository is for general informational purposes only. While we strive for accuracy, we make no guarantees regarding the completeness, reliability, or accuracy of the content. Any reliance on this information is strictly at the user's own risk. We are not responsible for any decisions made based on the data here, nor for the content or practices of any external links provided. It's recommended to cross-reference with other sources and consult professionals before making any decisions.
