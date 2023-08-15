@@ -24,18 +24,18 @@
 
 ## About Us
 
-SgCALE is a non-profit project that uses data and science for climate action. We aim to improve the scientific understanding of climate changes in Southeast Asia with open data. Find out more about us [here](https://sgcale.github.io/team/).
+SgCALE is a non-profit organization that uses data and science for climate action. We aim to improve scientific understanding of climate change in Southeast Asia with open data. Find out more about us [here](https://sgcale.github.io/team/).
 
 ## Overview
 
 Welcome to SgCALE (**S**in**g**apore’s **C**limate **A**rtificia**L** intelligence **E**ngine) Repository. This repository discusses the current limitations of our Global Climate Models (GCMs) and our unique approach towards climate downscaling.
 
-Our objectives is to:
+Our objectives are to:
 
 - Refine GCMs to a regional scale, enhancing their accuracy and applicability.
-- Provide resources, methodologies, and scripts to advance our understanding of climate changes.
+- Provide resources, methodologies, and scripts to advance our understanding of climate change.
 
-Whether you're a researcher, enthusiast, or just curious about climate science, this repository offers valuable insights and tools.
+Whether you are a researcher, enthusiast, or just curious about climate science, this repository offers valuable insights and tools.
 
 ## Global Climate Models (GCMs)
 
@@ -45,31 +45,31 @@ GCMs are numerical models that represent the major climate systems in the atmosp
 
 ### Data Resolution
 
-GCMs contains relatively coarse spatial resolution, often in the range of 100~300 km. While this is sufficient for global analysis, it can overlook significant regional and local variations, especially in areas with complex terrains or coastlines. For instance, a GCM might not accurately capture the microclimates found in mountainous regions or small islands, such as Singapore.
+GCMs contain relatively coarse spatial resolution, often in the range of 100~300 km. While this is sufficient for global analysis, it can overlook significant regional and local variations, especially in areas with complex terrains or coastlines. For instance, a GCM might not accurately capture microclimates in mountainous regions or small islands, such as Singapore.
 
 ## Downscaling
 
-To make GCM outputs relevant at local to regional scales, downscaling is employed. Downscaling is the process of taking coarse-resolution GCM outputs and refining them to provide high-resolution climate projections.
+Downscaling is employed to allow GCM outputs relevant at local to regional scales. Downscaling takes coarse-resolution GCM outputs and refines them to provide high-resolution climate projections.
 
 ### Statistical Downscaling
 
-This method involves establishing statistical relationships between the large-scale atmospheric data from GCMs and local-scale climate computations. Once these relationships are determined based on historical data, they can be used for future projections to predict local future climates.
+This method establishes statistical relationships between the large-scale atmospheric data from GCMs and local-scale climate computations. Once these relationships are determined based on historical data, future projections then allow for predicting local future climates.
 
 ### Dynamical Downscaling
 
-This method uses the outputs from GCMs as boundary conditions for regional climate models (RCMs) that have a much higher spatial resolution. RCMs, like GCMs, are based on the physical equations governing atmospheric flow but focus on a specific region. The advantage is that they can capture regional and local processes more accurately. However, they also inherit biases from the parent GCM and might introduce their own biases.
+This method uses the outputs from GCMs as boundary conditions for regional climate models (RCMs) with much higher spatial resolution. RCMs, like GCMs, are based on the physical equations governing atmospheric flow but focus on a specific region. The advantage is that they can capture regional and local processes more accurately. However, they also inherit biases from the parent GCM and might introduce further biases.
 
 ## Hybrid Statistical-dynamical Downscaling
 
-Drawing inspiration from the methods of [Xu et al. (2021)](https://pubmed.ncbi.nlm.nih.gov/34737356/), we've integrated both statistical and dynamical downscaling techniques to enhance the precision of our resulting dataset.
+Drawing inspiration from the methods of [Xu et al. (2021)](https://pubmed.ncbi.nlm.nih.gov/34737356/), we integrated both statistical and dynamical downscaling techniques to enhance the precision of our resulting dataset.
 
 ### Methodology
 
 1. Establish a bias-corrected and downscaled dataset based on 14 CMIP6 GCMs and the European Centre for Medium-Range Weather Forecasts Reanalysis 5 (ERA5) dataset.
 
-2. Adjusted the bias-corrected dataset to align with climate patterns of ERA5 and integrated non-linear trend observed from the 14 CMIP6 models.
+2. Adjusted the bias-corrected dataset to align with climate patterns of ERA5 and integrated non-linear trends observed from the 14 CMIP6 models.
 
-3. Resulting dataset spans a historical period of 1979–2014 and future scenarios (SSP585) of 2015–2100, with a temporal scale of six-hour.
+3. The resulting dataset spans a historical period of 1979–2014 and future scenarios (SSP585) of 2015–2100, with a temporal scale of six-hour.
 
 ### Key Features
 
@@ -99,10 +99,11 @@ Features of the resulting open-source and high-resolution dataset:
 
 - Variables include temperature, precipitation, wind speed, relative humidity, and solar radiation.
 
-- Each daily file has 8 timesteps (0,3,6,9,12,15,18,21 ; or 3,6,9,12,15,18,21,0).
-  - Due to occasional restarts, there are one or more files named by the same day.
-  - 7 timesteps in the last *_00:00:00 file are the same with the first*_03:00:00 file.
-  - We can merge the first timestep of our target \*_00:00:00 file with the first 7 timesteps of the \*_03:00:00 file using Xarray.
+- Each daily file has eight timesteps (0, 3, 6, 9, 12, 15, 18, 21; or 3, 6, 9, 12, 15, 18, 21, 0).
+
+  - Due to occasional restarts, one or more files may contain names of the same day.
+  - Seven timesteps in the last \*_00:00:00 file are the same as the first \*_03:00:00 file.
+  - We can merge the first timestep of our target \*_00:00:00 file with the first seven timesteps of the \*_03:00:00 file using Xarray.
 
 ## Extracting Data
 
@@ -139,4 +140,4 @@ Please use the GitHub Issues for public discussions related to bugs, enhancement
 
 ## Disclaimer
 
-The information provided in this repository is for general informational purposes only. While we strive for accuracy, we make no guarantees regarding the completeness, reliability, or accuracy of the content. Any reliance on this information is strictly at the user's own risk. We are not responsible for any decisions made based on the data here, nor for the content or practices of any external links provided. It's recommended to cross-reference with other sources and consult professionals before making any decisions.
+The information provided in this repository is for general informational purposes only. While we strive for accuracy, we make no guarantees regarding the completeness, reliability, or accuracy of the content. Any reliance on this information is strictly at the user's own risk. We are not responsible for any decisions made based on the data here nor for the content or practices of any external links provided. It's recommended to cross-reference with other sources and consult professionals before making any decisions.
