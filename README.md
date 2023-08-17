@@ -12,6 +12,7 @@
 </p>
 
 ## Table of Contents
+
 - [About Us](#about-us)
 - [Overview](#overview)
 - [Global Climate Models (GCMs)](#global-climate-models-gcms)
@@ -102,8 +103,8 @@ Features of the resulting open-source and high-resolution dataset:
 - Each daily file has eight timesteps (0, 3, 6, 9, 12, 15, 18, 21; or 3, 6, 9, 12, 15, 18, 21, 0).
 
   - Due to occasional restarts, one or more files may contain names of the same day.
-  - Seven timesteps in the last \*_00:00:00 file are the same as the first \*_03:00:00 file.
-  - We can merge the first timestep of our target \*_00:00:00 file with the first seven timesteps of the \*_03:00:00 file using Xarray.
+  - Seven timesteps in the last **_00:00:00* file are the same as the first **_03:00:00* file.
+  - We can merge the first timestep of our target **_00:00:00* file with the first seven timesteps of the **_03:00:00* file using [Xarray](https://docs.xarray.dev/en/stable/#).
 
 ## Extracting Data
 
@@ -134,9 +135,9 @@ for yr in range(1981,2020):
 
 ## Contact Us
 
-If you have any questions, comments, or suggestions that aren't suitable for public discussions in the Issues section, please feel free to reach out to [Xiaogang He](mailto:hexg@u.nus.edu).
+If you have any questions, comments, or suggestions that aren't suitable for public discussions in the [Issues](https://github.com/SgCALE/SgCALE.github.io/issues) section, please feel free to reach out to [Xiaogang He](mailto:hexg@u.nus.edu).
 
-Please use the GitHub Issues for public discussions related to bugs, enhancements, or other project-related discussions.
+Please use the GitHub [Issues](https://github.com/SgCALE/SgCALE.github.io/issues) for public discussions related to bugs, enhancements, or other project-related discussions.
 
 ## Disclaimer
 
