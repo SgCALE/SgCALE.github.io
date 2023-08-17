@@ -7,4 +7,4 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
 
-The digital fabric to detect, attribute and predict climate change and weather extremes harnessing machine learning.
+To harness the power of AI to further improve our scientific understanding of climate change and weather extremes.

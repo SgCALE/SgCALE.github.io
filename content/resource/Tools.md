@@ -6,4 +6,4 @@ draft: false
 weight: 3
 ---
 
-contents comming soon
+Contents comming soon!

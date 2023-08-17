@@ -5,6 +5,7 @@ featured: true
 draft: false
 weight: 4
 ---
-Jupyter Book for Python Climate Visuals
 
-https://github.com/XiaogangHe/python-climate-visuals
+Jupyter Notebook for climate-related data analytics and visualization.
+
+Access the GitHub repository for [Python Climate Visuals](https://github.com/XiaogangHe/python-climate-visuals).

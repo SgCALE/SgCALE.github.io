@@ -1,5 +1,6 @@
 ---
 title: 'Team'
+description: 'Team-SgCALE'
 intro_image: "images/team/team_work_same_as_originfig.svg"
 intro_image_absolute: false
 intro_image_hide_on_mobile: false

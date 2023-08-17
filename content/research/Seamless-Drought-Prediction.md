@@ -3,7 +3,7 @@ title: "Seamless Drought Prediction"
 date: 2022-11-07T18:02
 featured: true
 draft: false
-weight: 6
+weight: 7
 ---
 
-contents comming soon
+Contents comming soon!
