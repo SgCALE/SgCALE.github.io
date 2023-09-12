@@ -5,15 +5,10 @@
     <link>/mainpage/</link>
     <description>Recent content in Mainpages on We use computers to combat climate change.</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/mainpage/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Climate Intelligence</title>
-      <link>/mainpage/climate-intelligence/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/mainpage/climate-intelligence/</guid>
-      <description>High-precision climatic datasets and analytics in Southeast Asia</description>
-    </item>
+    <language>en-us</language>
+    
+	<atom:link href="/mainpage/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Climate Science</title>
@@ -21,25 +16,34 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mainpage/climate-science/</guid>
-      <description>Advanced physical understanding of climate extremes</description>
+      <description>Improve scientific understanding of climate extremes.</description>
     </item>
     
     <item>
-      <title>Climate Service</title>
-      <link>/mainpage/climate-service/</link>
+      <title>Climate Analysis</title>
+      <link>/mainpage/climate-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/mainpage/climate-service/</guid>
-      <description>Disaster risk reduction, mitigation and adaptation</description>
+      <guid>/mainpage/climate-analysis/</guid>
+      <description>Highly-precise simulated datasets for climate analysis.</description>
     </item>
     
     <item>
-      <title>Climate Platform</title>
-      <link>/mainpage/climate-platform/</link>
+      <title>Climate Risk</title>
+      <link>/mainpage/climate-risk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/mainpage/climate-platform/</guid>
-      <description>Impact-relevant information and decision support platform</description>
+      <guid>/mainpage/climate-risk/</guid>
+      <description>Climate risk reduction, mitigation and adaptation.</description>
+    </item>
+    
+    <item>
+      <title>Climate Impact</title>
+      <link>/mainpage/climate-impact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mainpage/climate-impact/</guid>
+      <description>Data-driven climate impact assessment to support decision-making.</description>
     </item>
     
   </channel>

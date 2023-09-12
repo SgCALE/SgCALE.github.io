@@ -5,14 +5,20 @@
     <link>/resource/</link>
     <description>Recent content in Resources on We use computers to combat climate change.</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    
+	<atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Apps</title>
       <link>/resource/apps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/resource/apps/</guid>
-      <description>contents comming soon</description>
+      <description>Addressing climate change, one innovative application at a time.
+Extreme Weather Prediction Weather prediction app for Singapore, using ConvLSTM models.
+The Extreme Weather Prediction web app is capable of predicting daily precipitation of our area of study from 2015 to 2020. While using the web app, the user can select their timestep of interest and compare the predicted results with the WRF simulated data, which serves as our “true” data for comparison.</description>
     </item>
     
     <item>
@@ -21,8 +27,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/resource/data/</guid>
-      <description>Multi-scale, high-resolution, and high-fidelity climate simulations
-Domains The dataset is simulated using WRF4.3 by ERA5 (3 domains) and GCM (4 domains) forcing in NSCC HPC, as shown below.  All output is daily netcdf files with equal area projection at three domains (12.5km: Southeast Asia; 2.5km: Southern Malay Peninsula; 500m: Singapore) Files include names with wrfout_d01_year-mon-day_00:00:00 (first running) and wrfout_d01_year-mon-day_03:00:00 (restart running) Every file has 8 timesteps (0,3,6,9,12,15,18,21 ; or 3,6,9,12,15,18,21,0) Due to the restart running,there are one or more files named by the same day.</description>
+      <description>Highly-precise climate simulation with multi-scale and resolution.
+Methodology The dataset is simulated using WRF4.3 by ERA5 (3 domains) and GCM (4 domains) forcing in NSCC HPC, as shown below.
+  Output files are in daily netCDF format with equal area projection at three domains (12.5km: Southeast Asia; 2.5km: Southern Malay Peninsula; 500m: Singapore).
+  Variables include temperature, precipitation, wind speed, relative humidity, and solar radiation.
+  Each daily file has eight timesteps (0, 3, 6, 9, 12, 15, 18, 21; or 3, 6, 9, 12, 15, 18, 21, 0).</description>
     </item>
     
     <item>
@@ -31,7 +40,7 @@ Domains The dataset is simulated using WRF4.3 by ERA5 (3 domains) and GCM (4 dom
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/resource/tools/</guid>
-      <description>contents comming soon</description>
+      <description>Contents comming soon!</description>
     </item>
     
     <item>
@@ -40,8 +49,8 @@ Domains The dataset is simulated using WRF4.3 by ERA5 (3 domains) and GCM (4 dom
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/resource/tutorials/</guid>
-      <description>Jupyter Book for Python Climate Visuals
-https://github.com/XiaogangHe/python-climate-visuals</description>
+      <description>Jupyter Notebook for climate-related data analytics and visualization.
+Access the GitHub repository for Python Climate Visuals.</description>
     </item>
     
   </channel>

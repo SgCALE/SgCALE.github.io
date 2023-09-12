@@ -22,7 +22,7 @@
     
   
   
-  <link rel="stylesheet" href="/css/style.min.7424c903a3f85431df3c618a6692b6afdd62ddb8ed717e97d062c263881a5749.css">
+  <link rel="stylesheet" href="/css/style.min.f3ad6f3542d1658e99e927682fa1fd0ef0f2ca7791bd37b3e9556e2d2ccce456.css">
   
 
   
@@ -146,17 +146,27 @@
     <div class="col-12 col-md-8">
       <div class="service service-single">
         <h1 class="title">Climate Downscaling</h1>
-        <div class="content"><h3 id="heading"></h3>
-<p>Hybrid statistical-dynamic downscaling based on multi-model ensembles</p>
+        <div class="content"><p>Hybrid statistical-dynamic downscaling based on multi-model ensembles</p>
 <h2 id="what-we-are-releasing">What we are releasing</h2>
 <p>We are releasing a bias-corrected and downscaled dataset based on 14 Coupled Model Intercomparison Project 6 (CMIP6) global climate models (GCMs) and the European Centre for Medium-Range Weather Forecasts Reanalysis 5 (ERA5) dataset. The dataset is simulated by <strong>ERA5 (3 domains)</strong> and <strong>GCMs (4 domains)</strong> forcing in NSCC HPC as shown in the following figure.</p>
 <p><img src="/images/rdomains.png" alt="CMIP6 Downscling"></p>
-<h2 id="what-is-downscaling">What is downscaling</h2>
-<p>GCMs under CMIP6 have been widely used to investigate climate change impacts and put forward associated adaptation and mitigation strategies. However, the relatively coarse spatial resolutions (usually 100~300km) preclude their direct applications at regional scales, which are exactly where the analysis (e.g., hydrological model simulation) is performed. To bridge this gap, a typical approach is to ‘refine’ the information from GCMs through regional climate downscaling experiments, which can be conducted statistically, dynamically, or a combination thereof. Statistical downscaling establishes relationships between large-scale climate indicators and small-scale climate variables in the reference (historical) period. Subsequently, these relationships are kept unchanged in the future and used to predict the future variables. On the other hand, dynamical downscaling operates based on the physical processes and the associated interactions in the climate systems and thus can produce a full set of regional climate simulations (e.g., temperature and precipitation fields) that are dynamically consistent. However, traditional dynamical downscaling contains significant biases that are transferred from GCMs and may be enhanced during the process of downscaling, thus degrading the downscaled results. One promising approach to remove these biases is the hybrid statistical-dynamical downscaling method, where GCMs are firstly bias-corrected, and subsequently used as lower and lateral boundary conditions to drive the regional climate models (RCMs).</p>
-<h3 id="heading-1"></h3>
-<p>In this work, we apply a hybrid statistical-dynamical downscaling method, following the approach of Xu et al. 2021. The bias-corrected dataset is adjusted to resemble ERA5-based mean climate and interannual variance, and with a non-linear trend from the ensemble mean of the 14 CMIP6 models. The dataset spans a historical period of 1979–2014 and future scenarios (SSP585) of 2015–2100, with a temporal scale of six-hour.</p>
-<h2 id="what-is-new">What is new</h2>
-<p>The main contributions of this dataset are twofold. First, we provide the open-source and high-resolution (12.5km: Southeast Asia; 2.5km:Southern Malay Peninsula; 500m: Singapore, as shown in the following Figures) datasets, including precipitation, wind, temperature, radiation, etc. Second, through our experiment, this bias-corrected and downscaled dataset is of exceptional quality compared to that of the existing dynamical scaling work (e.g., CORDEX) in southeast Asia in terms of its ability to reproduce regional climate extremes, spatial patterns, etc. This dataset will be useful for policy-makers and researchers to establish the necessary pathways for resilient planning in order to mitigate the dire impacts of climate change.
+<h2 id="what-is-downscaling">What is Downscaling?</h2>
+<p>GCMs under CMIP6 have been widely used to investigate climate change impacts and put forward associated adaptation and mitigation strategies. However, the relatively coarse spatial resolutions (usually 100~300km) preclude their direct applications at regional scales, which are exactly where the analysis (e.g., hydrological model simulation) is performed. To bridge this gap, a typical approach is to ‘refine’ the information from GCMs through regional climate downscaling experiments, which can be conducted statistically, dynamically, or a combination thereof.</p>
+<p>Statistical downscaling establishes relationships between large-scale climate indicators and small-scale climate variables in the reference (historical) period. Subsequently, these relationships are kept unchanged in the future and used to predict the future variables.</p>
+<p>Dynamical downscaling operates based on the physical processes and the associated interactions in the climate systems and thus can produce a full set of regional climate simulations (e.g., temperature and precipitation fields) that are dynamically consistent. However, traditional dynamical downscaling contains significant biases that are transferred from GCMs and may be enhanced during the process of downscaling, thus degrading the downscaled results.</p>
+<p>One promising approach to remove these biases is the hybrid statistical-dynamical downscaling method, where GCMs are firstly bias-corrected, and subsequently used as lower and lateral boundary conditions to drive the regional climate models (RCMs).</p>
+<p>In this work, we apply a hybrid statistical-dynamical downscaling method, following the approach of <a href="https://pubmed.ncbi.nlm.nih.gov/34737356/">Xu et al. 2021</a>. The bias-corrected dataset is adjusted to resemble ERA5-based mean climate and interannual variance, and with a non-linear trend from the ensemble mean of the 14 CMIP6 models. The dataset spans a historical period of 1979–2014 and future scenarios (SSP585) of 2015–2100, with a temporal scale of six-hour.</p>
+<h2 id="what-is-new">What is New?</h2>
+<p>Our downscaled dataset contributes in 2 ways:</p>
+<ul>
+<li>
+<p>Firstly, we provide the open-source and high-resolution (12.5km: Southeast Asia; 2.5km: Southern Malay Peninsula; 500m: Singapore, as shown in the following Figures) datasets, including precipitation, wind, temperature, radiation, etc.</p>
+</li>
+<li>
+<p>Secondly, through our experiments, this bias-corrected and downscaled dataset is of exceptional quality compared to that of the existing dynamical scaling work (e.g., CORDEX) in southeast Asia in terms of its ability to reproduce regional climate extremes, spatial patterns, etc.</p>
+</li>
+</ul>
+<p>This dataset will be useful for policy-makers and researchers to establish the necessary pathways for resilient planning in order to mitigate the dire impacts of climate change.</p>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -167,7 +177,7 @@
 
 
   
-    <link rel="stylesheet" href="/css/BeerSlider.css"> 
+    <link rel="stylesheet" href="/css/BeerSlider.css?v=20230804.14"> 
     <link rel="stylesheet" href="/css/demo.css"> 
     <script src="/js/BeerSlider.js"></script> 
   <link rel="stylesheet" href="/css/style.min.e3cdd185039a7fd6c284b38776b41b6090a1e53b76b7bd936fb3139f707412b2.css">
@@ -327,7 +337,7 @@
 </body>
 
 </html>
-</p>
+
 </div>
       </div>
     </div>
@@ -406,13 +416,13 @@
 
   
 
-<script type="text/javascript" src="/js/services.min.052ec1d7bcff8bba2b50359ebe62c0e6d0f530b3bd5cf723d5ccc5e8f22bd123.js"></script>
+<script type="text/javascript" src="/js/services.min.96db5a4d9a7ea2d1759fd6847940367b5207c4ef5686df932179e04aefccdf37.js"></script>
 
 
   
     
   
-  <script type="text/javascript" src="/js/scripts.min.98ee06cc35517b5800b382aecb0fc59893e95b9c11dd21842d0d57e4f68043e3.js"></script>
+  <script type="text/javascript" src="/js/scripts.min.bf1e1f7ae8e03db5f012356e825843facdff51c0a559cb0d27fe2bbe1db405c2.js"></script>
 
   
 
