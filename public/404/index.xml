@@ -5,10 +5,6 @@
     <link>/404/</link>
     <description>Recent content in Page Not Found on We use computers to combat climate change.</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/404/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/404/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
